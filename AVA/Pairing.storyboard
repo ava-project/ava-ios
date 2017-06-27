@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3hI-K3-fnh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SiA-lD-ScL">
+            <objects>
+                <navigationController id="3hI-K3-fnh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="GvE-vE-Ple">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.77925024867374004" green="0.16432602179318731" blue="0.37111575267349212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="p9w-mY-jiA" kind="relationship" relationship="rootViewController" id="X0p-qi-cGg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JR-j5-2IU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1190" y="-160"/>
+        </scene>
+        <!--Pairing Main View Controller-->
+        <scene sceneID="eDj-0h-k4F">
+            <objects>
+                <viewController id="p9w-mY-jiA" customClass="PairingMainViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F6W-sX-M6j"/>
+                        <viewControllerLayoutGuide type="bottom" id="oOD-ba-dOU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bas-8d-wy0">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppx-iO-etg">
+                                <rect key="frame" x="56" y="388" width="263" height="30"/>
+                                <state key="normal" title="WiFi"/>
+                                <connections>
+                                    <segue destination="Nv6-Vw-Ukx" kind="show" id="yxT-dk-C7R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lx2-kP-UBC">
+                                <rect key="frame" x="56" y="466" width="263" height="30"/>
+                                <state key="normal" title="Bluetooth"/>
+                                <connections>
+                                    <segue destination="guK-tM-ABa" kind="show" id="Exc-bG-o2R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNP-Ki-Oa0">
+                                <rect key="frame" x="56" y="543" width="263" height="30"/>
+                                <state key="normal" title="Line In"/>
+                                <connections>
+                                    <segue destination="9XP-1F-gvS" kind="show" id="Bai-5I-YPK"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7J-5f-tiu">
+                                <rect key="frame" x="16" y="0.0" width="343" height="378"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ppx-iO-etg" secondAttribute="trailing" constant="40" id="040-ny-5VT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lx2-kP-UBC" secondAttribute="trailing" constant="40" id="3Yw-fj-sIi"/>
+                            <constraint firstItem="ppx-iO-etg" firstAttribute="centerX" secondItem="Bas-8d-wy0" secondAttribute="centerX" id="4hq-6L-txi"/>
+                            <constraint firstItem="o7J-5f-tiu" firstAttribute="leading" secondItem="Bas-8d-wy0" secondAttribute="leadingMargin" id="4wb-gE-G8b"/>
+                            <constraint firstItem="MNP-Ki-Oa0" firstAttribute="leading" secondItem="Bas-8d-wy0" secondAttribute="leadingMargin" constant="40" id="CPL-ky-sdB"/>
+                            <constraint firstItem="Lx2-kP-UBC" firstAttribute="top" secondItem="ppx-iO-etg" secondAttribute="bottom" constant="48" id="Of9-be-gdI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o7J-5f-tiu" secondAttribute="trailing" id="WSf-RU-dIw"/>
+                            <constraint firstItem="MNP-Ki-Oa0" firstAttribute="centerX" secondItem="Bas-8d-wy0" secondAttribute="centerX" id="Wk8-3r-YrZ"/>
+                            <constraint firstItem="Lx2-kP-UBC" firstAttribute="leading" secondItem="Bas-8d-wy0" secondAttribute="leadingMargin" constant="40" id="Yoh-Vb-e64"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MNP-Ki-Oa0" secondAttribute="trailing" constant="40" id="a2y-p6-Swh"/>
+                            <constraint firstItem="oOD-ba-dOU" firstAttribute="top" secondItem="MNP-Ki-Oa0" secondAttribute="bottom" constant="30" id="d56-7z-SuH"/>
+                            <constraint firstItem="Lx2-kP-UBC" firstAttribute="centerX" secondItem="Bas-8d-wy0" secondAttribute="centerX" id="m7M-5O-KBJ"/>
+                            <constraint firstItem="ppx-iO-etg" firstAttribute="top" secondItem="o7J-5f-tiu" secondAttribute="bottom" constant="10" id="ntV-nI-zCq"/>
+                            <constraint firstItem="o7J-5f-tiu" firstAttribute="top" secondItem="F6W-sX-M6j" secondAttribute="bottom" id="roG-6T-aUy"/>
+                            <constraint firstItem="ppx-iO-etg" firstAttribute="leading" secondItem="Bas-8d-wy0" secondAttribute="leadingMargin" constant="40" id="vkg-yB-BZq"/>
+                            <constraint firstItem="MNP-Ki-Oa0" firstAttribute="top" secondItem="Lx2-kP-UBC" secondAttribute="bottom" constant="47" id="yXl-qH-FJK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HaH-8D-op1"/>
+                    <connections>
+                        <outlet property="animHolder" destination="o7J-5f-tiu" id="Qnj-vb-Zhy"/>
+                        <outlet property="bluetoothButton" destination="Lx2-kP-UBC" id="Xv5-m2-cCx"/>
+                        <outlet property="lineinButton" destination="MNP-Ki-Oa0" id="JR6-b9-zS9"/>
+                        <outlet property="wifiButton" destination="ppx-iO-etg" id="gT1-p0-EhG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKT-9c-gXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378" y="-161"/>
+        </scene>
+        <!--Pairing Line In View Controller-->
+        <scene sceneID="TbG-ty-EKg">
+            <objects>
+                <viewController id="9XP-1F-gvS" customClass="PairingLineInViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qro-Rl-Z4Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Kk-v1-dqw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fem-Id-Zci">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnZ-ei-UCP">
+                                <rect key="frame" x="10" y="20" width="355" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3N-s2-MJc">
+                                <rect key="frame" x="36" y="87" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VnZ-ei-UCP" firstAttribute="leading" secondItem="Fem-Id-Zci" secondAttribute="leading" constant="10" id="63O-yS-CAP"/>
+                            <constraint firstItem="VnZ-ei-UCP" firstAttribute="top" secondItem="Qro-Rl-Z4Q" secondAttribute="bottom" constant="20" id="8Mv-cf-2Wt"/>
+                            <constraint firstItem="k3N-s2-MJc" firstAttribute="top" secondItem="VnZ-ei-UCP" secondAttribute="bottom" constant="30" id="OdG-A4-Afy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k3N-s2-MJc" secondAttribute="trailing" constant="20" id="ZpK-hW-4bE"/>
+                            <constraint firstItem="k3N-s2-MJc" firstAttribute="leading" secondItem="Fem-Id-Zci" secondAttribute="leadingMargin" constant="20" id="ieM-xB-teO"/>
+                            <constraint firstAttribute="trailing" secondItem="VnZ-ei-UCP" secondAttribute="trailing" constant="10" id="xcC-4A-ksY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbP-ml-YCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="567"/>
+        </scene>
+        <!--PairingBT View Controller-->
+        <scene sceneID="EW0-FR-slg">
+            <objects>
+                <viewController id="guK-tM-ABa" customClass="PairingBTViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1rH-iU-HAI"/>
+                        <viewControllerLayoutGuide type="bottom" id="QER-q1-wpU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bfB-Za-vVC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8T-ir-0Rh">
+                                <rect key="frame" x="26" y="20" width="343" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZu-gL-Lv3">
+                                <rect key="frame" x="20" y="87" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mZu-gL-Lv3" firstAttribute="top" secondItem="E8T-ir-0Rh" secondAttribute="bottom" constant="30" id="KRn-Kt-08M"/>
+                            <constraint firstItem="mZu-gL-Lv3" firstAttribute="leading" secondItem="bfB-Za-vVC" secondAttribute="leading" constant="20" id="MJW-VQ-iju"/>
+                            <constraint firstItem="E8T-ir-0Rh" firstAttribute="top" secondItem="1rH-iU-HAI" secondAttribute="bottom" constant="20" id="Tvf-nF-Hji"/>
+                            <constraint firstItem="E8T-ir-0Rh" firstAttribute="leading" secondItem="bfB-Za-vVC" secondAttribute="leadingMargin" constant="10" id="cxu-jK-c7F"/>
+                            <constraint firstItem="E8T-ir-0Rh" firstAttribute="trailing" secondItem="bfB-Za-vVC" secondAttribute="trailingMargin" constant="10" id="gjx-qA-hnf"/>
+                            <constraint firstAttribute="trailing" secondItem="mZu-gL-Lv3" secondAttribute="trailing" constant="20" id="vi9-Ok-AoM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bd5-zd-JeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="-161"/>
+        </scene>
+        <!--Pairing Wi Fi View Controller-->
+        <scene sceneID="V3c-U3-AxH">
+            <objects>
+                <viewController id="Nv6-Vw-Ukx" customClass="PairingWiFiViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Ii-SI-T9Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="RJg-FE-79w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xIa-VJ-Gq6">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXd-lC-pnw">
+                                <rect key="frame" x="20" y="45" width="335" height="458"/>
+                                <string key="text">Welcome to the WiFi pairing wizard! We will take you through the necessary steps to connect your phone to AVA and use it as your microphone input.
+
+Please make sure AVA is ready to be paired, and proceed to the next step!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSF-w8-cej">
+                                <rect key="frame" x="56" y="543" width="263" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-Wifi" translatesAutoresizingMaskIntoConstraints="NO" id="4fk-1a-vkc">
+                                <rect key="frame" x="26" y="10" width="323" height="25"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WXd-lC-pnw" secondAttribute="trailing" constant="20" id="2OD-Cp-aDX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GSF-w8-cej" secondAttribute="trailing" constant="40" id="42q-Db-bSP"/>
+                            <constraint firstItem="4fk-1a-vkc" firstAttribute="leading" secondItem="xIa-VJ-Gq6" secondAttribute="leadingMargin" constant="10" id="4bp-aM-CA9"/>
+                            <constraint firstItem="4fk-1a-vkc" firstAttribute="top" secondItem="2Ii-SI-T9Z" secondAttribute="bottom" constant="10" id="6Cm-rr-Byt"/>
+                            <constraint firstItem="GSF-w8-cej" firstAttribute="leading" secondItem="xIa-VJ-Gq6" secondAttribute="leadingMargin" constant="40" id="7Nr-Us-dgq"/>
+                            <constraint firstItem="WXd-lC-pnw" firstAttribute="top" secondItem="4fk-1a-vkc" secondAttribute="bottom" constant="10" id="Dpk-Gt-XTZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4fk-1a-vkc" secondAttribute="trailing" constant="10" id="gnq-E6-b0z"/>
+                            <constraint firstItem="GSF-w8-cej" firstAttribute="top" secondItem="WXd-lC-pnw" secondAttribute="bottom" constant="40" id="n0j-yt-p7o"/>
+                            <constraint firstItem="RJg-FE-79w" firstAttribute="top" secondItem="GSF-w8-cej" secondAttribute="bottom" constant="30" id="p3R-8e-jcP"/>
+                            <constraint firstItem="WXd-lC-pnw" firstAttribute="leading" secondItem="xIa-VJ-Gq6" secondAttribute="leading" constant="20" id="tch-0h-6Yo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iconImage" destination="4fk-1a-vkc" id="SSE-Ew-rnN"/>
+                        <outlet property="nextButton" destination="GSF-w8-cej" id="sEH-gY-otZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3k-nP-rrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="-847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-Wifi" width="25" height="25"/>
+    </resources>
+</document>

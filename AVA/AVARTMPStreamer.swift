@@ -32,7 +32,7 @@ class AVARTMPStreamer {
         stream?.attachAudio(captureDevice) { error in
             print("Error while attaching audio : \(error)")
         }
-        connection.connect("rtmp://localhost/AVA/0", arguments: nil)
+        connection.connect("rtmp://0.0.0.0/app", arguments: nil)
         stream?.publish("AVAstream")
         print("Started")
         

@@ -1,5 +1,2 @@
-github "DaveWoodCom/XCGLogger" "5.0.1"
 github "ViccAlexander/Chameleon" "2.2.0"
-github "airbnb/lottie-ios" "13de4a22780873ebd2124a35126da8adc2a7c6b6"
-github "audiokit/AudioKit" "v3.7"
-github "shogo4405/lf.swift" "0.7.0"
+github "daltoniam/Starscream" "2.1.0"

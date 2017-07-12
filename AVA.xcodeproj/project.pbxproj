@@ -7,61 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB5F38D61EEA771300D2163B /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F38D51EEA771300D2163B /* Lottie.framework */; };
-		AB5F38D81EEA773600D2163B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F38D71EEA773600D2163B /* SplashViewController.swift */; };
-		AB5F38DB1EEA77EB00D2163B /* A.json in Resources */ = {isa = PBXBuildFile; fileRef = AB5F38D91EEA77EB00D2163B /* A.json */; };
-		AB5F38DC1EEA77EB00D2163B /* V.json in Resources */ = {isa = PBXBuildFile; fileRef = AB5F38DA1EEA77EB00D2163B /* V.json */; };
 		AB64DEE01EFD3D9F0024E291 /* PairingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEDF1EFD3D9F0024E291 /* PairingMainViewController.swift */; };
 		AB64DEE31EFD48B20024E291 /* PairingWiFiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE21EFD48B20024E291 /* PairingWiFiViewController.swift */; };
 		AB64DEE51EFD4AA70024E291 /* PairingBTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */; };
 		AB64DEE71EFD4AB30024E291 /* PairingLineInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */; };
-		AB64DEE91EFD54400024E291 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = AB64DEE81EFD54400024E291 /* Watermelon.json */; };
-		AB9A51CB1EF6A01A009A29FD /* lf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A51C81EF6A01A009A29FD /* lf.framework */; };
-		AB9A51CC1EF6A01A009A29FD /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A51C91EF6A01A009A29FD /* XCGLogger.framework */; };
-		AB9A51CD1EF6A01A009A29FD /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A51CA1EF6A01A009A29FD /* ObjcExceptionBridging.framework */; };
+		AB941F941F14EC1C000305DD /* NibSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F931F14EC1C000305DD /* NibSettable.swift */; };
+		AB941F981F14ECA3000305DD /* AVAPushTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F971F14ECA3000305DD /* AVAPushTalkView.swift */; };
+		AB941F9A1F14ECE0000305DD /* AVAPushTalkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB941F991F14ECE0000305DD /* AVAPushTalkView.xib */; };
+		AB941F9C1F14F179000305DD /* AVARecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F9B1F14F179000305DD /* AVARecorder.swift */; };
 		AB9A51CF1EF6A169009A29FD /* AVAStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A51CE1EF6A169009A29FD /* AVAStreamViewController.swift */; };
 		AB9A51D31EF6A271009A29FD /* Pairing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A51D21EF6A271009A29FD /* Pairing.storyboard */; };
 		AB9A51D91EF6A2E8009A29FD /* Streaming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A51D81EF6A2E8009A29FD /* Streaming.storyboard */; };
-		AB9A51DD1EF6A339009A29FD /* AVAStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A51DC1EF6A339009A29FD /* AVAStreamer.swift */; };
-		AB9A51DF1EF6D863009A29FD /* AVARTMPStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A51DE1EF6D863009A29FD /* AVARTMPStreamer.swift */; };
-		AB9A51E11EF6D86D009A29FD /* AVAHLSStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A51E01EF6D86D009A29FD /* AVAHLSStreamer.swift */; };
 		ABABCE6B1E98DDD100EAE31E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABCE6A1E98DDD100EAE31E /* AppDelegate.swift */; };
-		ABABCE6D1E98DDD100EAE31E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABCE6C1E98DDD100EAE31E /* ViewController.swift */; };
-		ABABCE701E98DDD100EAE31E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABABCE6E1E98DDD100EAE31E /* Main.storyboard */; };
 		ABABCE721E98DDD100EAE31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABABCE711E98DDD100EAE31E /* Assets.xcassets */; };
 		ABABCE751E98DDD100EAE31E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABABCE731E98DDD100EAE31E /* LaunchScreen.storyboard */; };
-		ABABCE7D1E98E03900EAE31E /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABCE7C1E98E03900EAE31E /* RecordViewController.swift */; };
-		ABABCE801E98E26300EAE31E /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABABCE7F1E98E26300EAE31E /* AudioKit.framework */; };
+		ABEC38061F1647D300A6BDE5 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEC38051F1647D300A6BDE5 /* Starscream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB5F38D51EEA771300D2163B /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
-		AB5F38D71EEA773600D2163B /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		AB5F38D91EEA77EB00D2163B /* A.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = A.json; sourceTree = "<group>"; };
-		AB5F38DA1EEA77EB00D2163B /* V.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = V.json; sourceTree = "<group>"; };
 		AB64DEDF1EFD3D9F0024E291 /* PairingMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingMainViewController.swift; sourceTree = "<group>"; };
 		AB64DEE21EFD48B20024E291 /* PairingWiFiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingWiFiViewController.swift; sourceTree = "<group>"; };
 		AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingBTViewController.swift; sourceTree = "<group>"; };
 		AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingLineInViewController.swift; sourceTree = "<group>"; };
-		AB64DEE81EFD54400024E291 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
-		AB9A51C81EF6A01A009A29FD /* lf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lf.framework; path = Carthage/Build/iOS/lf.framework; sourceTree = "<group>"; };
-		AB9A51C91EF6A01A009A29FD /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
-		AB9A51CA1EF6A01A009A29FD /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
+		AB941F931F14EC1C000305DD /* NibSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibSettable.swift; sourceTree = "<group>"; };
+		AB941F971F14ECA3000305DD /* AVAPushTalkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAPushTalkView.swift; sourceTree = "<group>"; };
+		AB941F991F14ECE0000305DD /* AVAPushTalkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAPushTalkView.xib; sourceTree = "<group>"; };
+		AB941F9B1F14F179000305DD /* AVARecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVARecorder.swift; sourceTree = "<group>"; };
 		AB9A51CE1EF6A169009A29FD /* AVAStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAStreamViewController.swift; sourceTree = "<group>"; };
 		AB9A51D21EF6A271009A29FD /* Pairing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pairing.storyboard; sourceTree = "<group>"; };
 		AB9A51D81EF6A2E8009A29FD /* Streaming.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Streaming.storyboard; sourceTree = "<group>"; };
-		AB9A51DC1EF6A339009A29FD /* AVAStreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAStreamer.swift; sourceTree = "<group>"; };
-		AB9A51DE1EF6D863009A29FD /* AVARTMPStreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVARTMPStreamer.swift; sourceTree = "<group>"; };
-		AB9A51E01EF6D86D009A29FD /* AVAHLSStreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAHLSStreamer.swift; sourceTree = "<group>"; };
 		ABABCE671E98DDD100EAE31E /* AVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABABCE6A1E98DDD100EAE31E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABABCE6C1E98DDD100EAE31E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ABABCE6F1E98DDD100EAE31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABABCE711E98DDD100EAE31E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABABCE741E98DDD100EAE31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABABCE761E98DDD100EAE31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABABCE7C1E98E03900EAE31E /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
-		ABABCE7F1E98E26300EAE31E /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Carthage/Build/iOS/AudioKit.framework; sourceTree = "<group>"; };
+		ABEC38051F1647D300A6BDE5 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9A51CB1EF6A01A009A29FD /* lf.framework in Frameworks */,
-				AB9A51CC1EF6A01A009A29FD /* XCGLogger.framework in Frameworks */,
-				AB9A51CD1EF6A01A009A29FD /* ObjcExceptionBridging.framework in Frameworks */,
-				AB5F38D61EEA771300D2163B /* Lottie.framework in Frameworks */,
-				ABABCE801E98E26300EAE31E /* AudioKit.framework in Frameworks */,
+				ABEC38061F1647D300A6BDE5 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +64,56 @@
 				AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */,
 			);
 			name = WiFi;
+			sourceTree = "<group>";
+		};
+		AB68BB811F16CDD800FBA946 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				AB68BB821F16CDEF00FBA946 /* Storyboards */,
+				AB68BB831F16CDF500FBA946 /* ViewControllers */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		AB68BB821F16CDEF00FBA946 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ABABCE731E98DDD100EAE31E /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		AB68BB831F16CDF500FBA946 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB941F921F14EBF2000305DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AB941F931F14EC1C000305DD /* NibSettable.swift */,
+				AB941F9B1F14F179000305DD /* AVARecorder.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		AB941F951F14EC69000305DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB941F961F14EC7D000305DD /* AVAPushTalkView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AB941F961F14EC7D000305DD /* AVAPushTalkView */ = {
+			isa = PBXGroup;
+			children = (
+				AB941F971F14ECA3000305DD /* AVAPushTalkView.swift */,
+				AB941F991F14ECE0000305DD /* AVAPushTalkView.xib */,
+			);
+			name = AVAPushTalkView;
 			sourceTree = "<group>";
 		};
 		AB9A51D11EF6A264009A29FD /* Pairing */ = {
@@ -128,6 +154,7 @@
 		AB9A51D71EF6A2CC009A29FD /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				AB68BB811F16CDD800FBA946 /* Launch */,
 				AB9A51D11EF6A264009A29FD /* Pairing */,
 				AB9A51D61EF6A2C5009A29FD /* Streaming */,
 			);
@@ -171,19 +198,10 @@
 			isa = PBXGroup;
 			children = (
 				ABABCE6A1E98DDD100EAE31E /* AppDelegate.swift */,
-				ABABCE6C1E98DDD100EAE31E /* ViewController.swift */,
-				ABABCE7C1E98E03900EAE31E /* RecordViewController.swift */,
-				AB9A51DC1EF6A339009A29FD /* AVAStreamer.swift */,
-				AB9A51DE1EF6D863009A29FD /* AVARTMPStreamer.swift */,
-				AB9A51E01EF6D86D009A29FD /* AVAHLSStreamer.swift */,
+				AB941F951F14EC69000305DD /* Views */,
+				AB941F921F14EBF2000305DD /* Utils */,
 				AB9A51D71EF6A2CC009A29FD /* Stories */,
-				AB5F38D71EEA773600D2163B /* SplashViewController.swift */,
-				AB5F38D91EEA77EB00D2163B /* A.json */,
-				AB5F38DA1EEA77EB00D2163B /* V.json */,
-				AB64DEE81EFD54400024E291 /* Watermelon.json */,
-				ABABCE6E1E98DDD100EAE31E /* Main.storyboard */,
 				ABABCE711E98DDD100EAE31E /* Assets.xcassets */,
-				ABABCE731E98DDD100EAE31E /* LaunchScreen.storyboard */,
 				ABABCE761E98DDD100EAE31E /* Info.plist */,
 			);
 			path = AVA;
@@ -192,11 +210,7 @@
 		ABABCE7E1E98E26100EAE31E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB9A51C81EF6A01A009A29FD /* lf.framework */,
-				AB9A51C91EF6A01A009A29FD /* XCGLogger.framework */,
-				AB9A51CA1EF6A01A009A29FD /* ObjcExceptionBridging.framework */,
-				AB5F38D51EEA771300D2163B /* Lottie.framework */,
-				ABABCE7F1E98E26300EAE31E /* AudioKit.framework */,
+				ABEC38051F1647D300A6BDE5 /* Starscream.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,13 +276,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5F38DC1EEA77EB00D2163B /* V.json in Resources */,
 				AB9A51D91EF6A2E8009A29FD /* Streaming.storyboard in Resources */,
 				ABABCE751E98DDD100EAE31E /* LaunchScreen.storyboard in Resources */,
 				ABABCE721E98DDD100EAE31E /* Assets.xcassets in Resources */,
-				ABABCE701E98DDD100EAE31E /* Main.storyboard in Resources */,
-				AB64DEE91EFD54400024E291 /* Watermelon.json in Resources */,
-				AB5F38DB1EEA77EB00D2163B /* A.json in Resources */,
+				AB941F9A1F14ECE0000305DD /* AVAPushTalkView.xib in Resources */,
 				AB9A51D31EF6A271009A29FD /* Pairing.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +293,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/AudioKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ObjcExceptionBridging.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/lf.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
 			);
 			outputPaths = (
 			);
@@ -301,17 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABABCE7D1E98E03900EAE31E /* RecordViewController.swift in Sources */,
-				AB9A51E11EF6D86D009A29FD /* AVAHLSStreamer.swift in Sources */,
-				AB9A51DF1EF6D863009A29FD /* AVARTMPStreamer.swift in Sources */,
-				ABABCE6D1E98DDD100EAE31E /* ViewController.swift in Sources */,
+				AB941F941F14EC1C000305DD /* NibSettable.swift in Sources */,
 				AB9A51CF1EF6A169009A29FD /* AVAStreamViewController.swift in Sources */,
-				AB9A51DD1EF6A339009A29FD /* AVAStreamer.swift in Sources */,
+				AB941F9C1F14F179000305DD /* AVARecorder.swift in Sources */,
 				AB64DEE31EFD48B20024E291 /* PairingWiFiViewController.swift in Sources */,
 				ABABCE6B1E98DDD100EAE31E /* AppDelegate.swift in Sources */,
 				AB64DEE71EFD4AB30024E291 /* PairingLineInViewController.swift in Sources */,
 				AB64DEE51EFD4AA70024E291 /* PairingBTViewController.swift in Sources */,
-				AB5F38D81EEA773600D2163B /* SplashViewController.swift in Sources */,
+				AB941F981F14ECA3000305DD /* AVAPushTalkView.swift in Sources */,
 				AB64DEE01EFD3D9F0024E291 /* PairingMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,14 +323,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ABABCE6E1E98DDD100EAE31E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABABCE6F1E98DDD100EAE31E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ABABCE731E98DDD100EAE31E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Stream View Controller-->
+        <!--Push To Talk View Controller-->
         <scene sceneID="nQ9-3W-HrE">
             <objects>
-                <viewController id="bsV-wJ-CkL" customClass="AVAStreamViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bsV-wJ-CkL" customClass="AVAPushToTalkViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QM3-al-zrD"/>
                         <viewControllerLayoutGuide type="bottom" id="2Cl-H9-x0N"/>

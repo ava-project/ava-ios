@@ -8,29 +8,29 @@
 
 import UIKit
 
-protocol AVAPushTalkViewDelegate: class {
-    func pushTalkView(didReceiveTouchDown: Bool)
-    func pushTalkView(didReceiveTouchUp: Bool)
+protocol AVAPushToTalkViewDelegate: class {
+    func pushToTalkView(didReceiveTouchDown: Bool)
+    func pushToTalkView(didReceiveTouchUp: Bool)
 }
 
-class AVAPushTalkView: NibSettable {
+class AVAPushToTalkView: NibSettable {
     
     let recorder = AVARecorder()
 
-    var delegate: AVAPushTalkViewDelegate?
+    var delegate: AVAPushToTalkViewDelegate?
     
     @IBOutlet weak var mainView: UIView!
     
     @IBAction func actionButtonDown(_ sender: Any) {
-        delegate?.pushTalkView(didReceiveTouchDown: true)
+        delegate?.pushToTalkView(didReceiveTouchDown: true)
     }
     
     @IBAction func actionButtonUpInside(_ sender: Any) {
-        delegate?.pushTalkView(didReceiveTouchUp: true)
+        delegate?.pushToTalkView(didReceiveTouchUp: true)
     }
     
     @IBAction func actionButtonUpOutside(_ sender: Any) {
-        delegate?.pushTalkView(didReceiveTouchUp: true)
+        delegate?.pushToTalkView(didReceiveTouchUp: true)
     }
     
     
@@ -40,7 +40,7 @@ class AVAPushTalkView: NibSettable {
     
 }
 
-extension AVAPushTalkView: UIGestureRecognizerDelegate {
+extension AVAPushToTalkView: UIGestureRecognizerDelegate {
     
     override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         print("shouldBegin")

@@ -9,13 +9,13 @@
 import UIKit
 //import lf
 
-class AVAStreamViewController: UIViewController {
+class AVAPushToTalkViewController: UIViewController {
 
     let recorder = AVARecorder()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let pushTalkView = AVAPushTalkView(frame: view.frame)
+        let pushTalkView = AVAPushToTalkView(frame: view.frame)
         pushTalkView.delegate = self
         self.view.addSubview(pushTalkView)
     }
@@ -38,14 +38,14 @@ class AVAStreamViewController: UIViewController {
 
 }
 
-extension AVAStreamViewController: AVAPushTalkViewDelegate {
+extension AVAPushToTalkViewController: AVAPushToTalkViewDelegate {
     
-    func pushTalkView(didReceiveTouchUp: Bool) {
+    func pushToTalkView(didReceiveTouchUp: Bool) {
         recorder.stop()
         
     }
     
-    func pushTalkView(didReceiveTouchDown: Bool) {
+    func pushToTalkView(didReceiveTouchDown: Bool) {
         recorder.record()
     }
     

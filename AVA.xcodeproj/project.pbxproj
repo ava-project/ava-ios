@@ -12,12 +12,12 @@
 		AB64DEE51EFD4AA70024E291 /* PairingBTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */; };
 		AB64DEE71EFD4AB30024E291 /* PairingLineInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */; };
 		AB941F941F14EC1C000305DD /* NibSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F931F14EC1C000305DD /* NibSettable.swift */; };
-		AB941F981F14ECA3000305DD /* AVAPushTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F971F14ECA3000305DD /* AVAPushTalkView.swift */; };
-		AB941F9A1F14ECE0000305DD /* AVAPushTalkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB941F991F14ECE0000305DD /* AVAPushTalkView.xib */; };
+		AB941F981F14ECA3000305DD /* AVAPushToTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */; };
+		AB941F9A1F14ECE0000305DD /* AVAPushToTalkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */; };
 		AB941F9C1F14F179000305DD /* AVARecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F9B1F14F179000305DD /* AVARecorder.swift */; };
-		AB9A51CF1EF6A169009A29FD /* AVAStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A51CE1EF6A169009A29FD /* AVAStreamViewController.swift */; };
+		AB9A51CF1EF6A169009A29FD /* AVAPushToTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A51CE1EF6A169009A29FD /* AVAPushToTalkViewController.swift */; };
 		AB9A51D31EF6A271009A29FD /* Pairing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A51D21EF6A271009A29FD /* Pairing.storyboard */; };
-		AB9A51D91EF6A2E8009A29FD /* Streaming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A51D81EF6A2E8009A29FD /* Streaming.storyboard */; };
+		AB9A51D91EF6A2E8009A29FD /* PushToTalk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A51D81EF6A2E8009A29FD /* PushToTalk.storyboard */; };
 		ABABCE6B1E98DDD100EAE31E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABCE6A1E98DDD100EAE31E /* AppDelegate.swift */; };
 		ABABCE721E98DDD100EAE31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABABCE711E98DDD100EAE31E /* Assets.xcassets */; };
 		ABABCE751E98DDD100EAE31E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABABCE731E98DDD100EAE31E /* LaunchScreen.storyboard */; };
@@ -30,12 +30,12 @@
 		AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingBTViewController.swift; sourceTree = "<group>"; };
 		AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingLineInViewController.swift; sourceTree = "<group>"; };
 		AB941F931F14EC1C000305DD /* NibSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibSettable.swift; sourceTree = "<group>"; };
-		AB941F971F14ECA3000305DD /* AVAPushTalkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAPushTalkView.swift; sourceTree = "<group>"; };
-		AB941F991F14ECE0000305DD /* AVAPushTalkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAPushTalkView.xib; sourceTree = "<group>"; };
+		AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAPushToTalkView.swift; sourceTree = "<group>"; };
+		AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAPushToTalkView.xib; sourceTree = "<group>"; };
 		AB941F9B1F14F179000305DD /* AVARecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVARecorder.swift; sourceTree = "<group>"; };
-		AB9A51CE1EF6A169009A29FD /* AVAStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAStreamViewController.swift; sourceTree = "<group>"; };
+		AB9A51CE1EF6A169009A29FD /* AVAPushToTalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAPushToTalkViewController.swift; sourceTree = "<group>"; };
 		AB9A51D21EF6A271009A29FD /* Pairing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pairing.storyboard; sourceTree = "<group>"; };
-		AB9A51D81EF6A2E8009A29FD /* Streaming.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Streaming.storyboard; sourceTree = "<group>"; };
+		AB9A51D81EF6A2E8009A29FD /* PushToTalk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushToTalk.storyboard; sourceTree = "<group>"; };
 		ABABCE671E98DDD100EAE31E /* AVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABABCE6A1E98DDD100EAE31E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABABCE711E98DDD100EAE31E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +102,6 @@
 		AB941F951F14EC69000305DD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AB941F961F14EC7D000305DD /* AVAPushTalkView */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -110,10 +109,18 @@
 		AB941F961F14EC7D000305DD /* AVAPushTalkView */ = {
 			isa = PBXGroup;
 			children = (
-				AB941F971F14ECA3000305DD /* AVAPushTalkView.swift */,
-				AB941F991F14ECE0000305DD /* AVAPushTalkView.xib */,
+				AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */,
+				AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */,
 			);
 			name = AVAPushTalkView;
+			sourceTree = "<group>";
+		};
+		AB9711D71F1902750071E2AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB941F961F14EC7D000305DD /* AVAPushTalkView */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		AB9A51D11EF6A264009A29FD /* Pairing */ = {
@@ -142,13 +149,13 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		AB9A51D61EF6A2C5009A29FD /* Streaming */ = {
+		AB9A51D61EF6A2C5009A29FD /* PustToTalk */ = {
 			isa = PBXGroup;
 			children = (
 				AB9A51DB1EF6A2F3009A29FD /* Storyboards */,
 				AB9A51DA1EF6A2ED009A29FD /* ViewControllers */,
 			);
-			name = Streaming;
+			name = PustToTalk;
 			sourceTree = "<group>";
 		};
 		AB9A51D71EF6A2CC009A29FD /* Stories */ = {
@@ -156,7 +163,8 @@
 			children = (
 				AB68BB811F16CDD800FBA946 /* Launch */,
 				AB9A51D11EF6A264009A29FD /* Pairing */,
-				AB9A51D61EF6A2C5009A29FD /* Streaming */,
+				AB9A51D61EF6A2C5009A29FD /* PustToTalk */,
+				AB9711D71F1902750071E2AB /* Views */,
 			);
 			name = Stories;
 			sourceTree = "<group>";
@@ -164,7 +172,7 @@
 		AB9A51DA1EF6A2ED009A29FD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AB9A51CE1EF6A169009A29FD /* AVAStreamViewController.swift */,
+				AB9A51CE1EF6A169009A29FD /* AVAPushToTalkViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -172,7 +180,7 @@
 		AB9A51DB1EF6A2F3009A29FD /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				AB9A51D81EF6A2E8009A29FD /* Streaming.storyboard */,
+				AB9A51D81EF6A2E8009A29FD /* PushToTalk.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -276,10 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9A51D91EF6A2E8009A29FD /* Streaming.storyboard in Resources */,
+				AB9A51D91EF6A2E8009A29FD /* PushToTalk.storyboard in Resources */,
 				ABABCE751E98DDD100EAE31E /* LaunchScreen.storyboard in Resources */,
 				ABABCE721E98DDD100EAE31E /* Assets.xcassets in Resources */,
-				AB941F9A1F14ECE0000305DD /* AVAPushTalkView.xib in Resources */,
+				AB941F9A1F14ECE0000305DD /* AVAPushToTalkView.xib in Resources */,
 				AB9A51D31EF6A271009A29FD /* Pairing.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,13 +317,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB941F941F14EC1C000305DD /* NibSettable.swift in Sources */,
-				AB9A51CF1EF6A169009A29FD /* AVAStreamViewController.swift in Sources */,
+				AB9A51CF1EF6A169009A29FD /* AVAPushToTalkViewController.swift in Sources */,
 				AB941F9C1F14F179000305DD /* AVARecorder.swift in Sources */,
 				AB64DEE31EFD48B20024E291 /* PairingWiFiViewController.swift in Sources */,
 				ABABCE6B1E98DDD100EAE31E /* AppDelegate.swift in Sources */,
 				AB64DEE71EFD4AB30024E291 /* PairingLineInViewController.swift in Sources */,
 				AB64DEE51EFD4AA70024E291 /* PairingBTViewController.swift in Sources */,
-				AB941F981F14ECA3000305DD /* AVAPushTalkView.swift in Sources */,
+				AB941F981F14ECA3000305DD /* AVAPushToTalkView.swift in Sources */,
 				AB64DEE01EFD3D9F0024E291 /* PairingMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

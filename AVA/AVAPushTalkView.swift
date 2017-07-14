@@ -8,38 +8,34 @@
 
 import UIKit
 
+protocol AVAPushTalkViewDelegate: class {
+    func pushTalkView(didReceiveTouchDown: Bool)
+    func pushTalkView(didReceiveTouchUp: Bool)
+}
+
 class AVAPushTalkView: NibSettable {
     
-    let gestureRecognizer = UITapGestureRecognizer()
-    
     let recorder = AVARecorder()
-    
-    var isRecording: Bool = false
+
+    var delegate: AVAPushTalkViewDelegate?
     
     @IBOutlet weak var mainView: UIView!
     
-    @IBAction func actionButtonTapped(_ sender: Any) {
-        if isRecording {
-            recorder.stop()
-            isRecording = false
-        } else {
-            recorder.record()
-            isRecording = true
-        }
+    @IBAction func actionButtonDown(_ sender: Any) {
+        delegate?.pushTalkView(didReceiveTouchDown: true)
     }
+    
+    @IBAction func actionButtonUpInside(_ sender: Any) {
+        delegate?.pushTalkView(didReceiveTouchUp: true)
+    }
+    
+    @IBAction func actionButtonUpOutside(_ sender: Any) {
+        delegate?.pushTalkView(didReceiveTouchUp: true)
+    }
+    
     
     override func setupUI() {
         super.setupUI()
-        gestureRecognizer.numberOfTapsRequired = 1
-
-//        let touchGesture = UIGesture
-        /*let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapView(_:)))
-        tapGesture.delegate = self
-        self.addGestureRecognizer(tapGesture)*/
-    }
-    
-    func tapView(_ sender: UITapGestureRecognizer) {
-        print("Received tap, state: \(sender.state)")
     }
     
 }

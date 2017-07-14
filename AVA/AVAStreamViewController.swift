@@ -11,15 +11,12 @@ import UIKit
 
 class AVAStreamViewController: UIViewController {
 
+    let recorder = AVARecorder()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        var rtmpStream: RTMPStream = RTMPStream(connection: )
-/*        let url = URL(string: "http://jeansarda.com")
-        let streamerSettings = AVAStreamerSettings(mode: .rtmp, sampleRate: 44_100, bitRate: 32 * 1024, url: url!)
-        var streamer = AVAStreamer(streamerSettings)
-        print("Starting...")
-        streamer.connect()*/
-        let pushTalkView = AVAPushTalkView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        let pushTalkView = AVAPushTalkView(frame: view.frame)
+        pushTalkView.delegate = self
         self.view.addSubview(pushTalkView)
     }
 
@@ -39,4 +36,17 @@ class AVAStreamViewController: UIViewController {
     }
     */
 
+}
+
+extension AVAStreamViewController: AVAPushTalkViewDelegate {
+    
+    func pushTalkView(didReceiveTouchUp: Bool) {
+        recorder.stop()
+        
+    }
+    
+    func pushTalkView(didReceiveTouchDown: Bool) {
+        recorder.record()
+    }
+    
 }

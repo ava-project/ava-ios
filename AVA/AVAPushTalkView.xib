@@ -21,9 +21,10 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4h-Wk-vVP">
                     <rect key="frame" x="0.0" y="0.0" width="237" height="303"/>
-                    <state key="normal" title="Action"/>
                     <connections>
-                        <action selector="actionButtonTapped:" destination="-1" eventType="touchUpInside" id="d63-6E-UbN"/>
+                        <action selector="actionButtonDown:" destination="-1" eventType="touchDown" id="vxc-aq-cgD"/>
+                        <action selector="actionButtonUpInside:" destination="-1" eventType="touchUpInside" id="Rla-Ap-33c"/>
+                        <action selector="actionButtonUpOutside:" destination="-1" eventType="touchUpOutside" id="Fdm-BU-Jxw"/>
                     </connections>
                 </button>
             </subviews>

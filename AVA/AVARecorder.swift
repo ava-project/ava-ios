@@ -65,8 +65,11 @@ extension AVARecorder: AVAudioRecorderDelegate {
         do {
             let data = try Data(contentsOf: filePath)
             
-            socket?.write(data: data)
-            socket?.disconnect()
+            socket?.write(data: data) {
+                print("data written")
+            }
+
+            //socket?.disconnect()
         } catch {
             print("Catched error \(error.localizedDescription)")
         }
@@ -92,6 +95,8 @@ extension AVARecorder: WebSocketDelegate, WebSocketPongDelegate {
     
     func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
         print("DidDisconnect with error : \(error.debugDescription)")
+        socket.connect()
+        print("tried to reconnect")
     }
     
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {

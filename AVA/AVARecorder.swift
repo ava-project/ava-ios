@@ -14,6 +14,7 @@ class AVARecorder: NSObject {
     
     var recorder: AVAudioRecorder?
     var socket: WebSocket?
+    var failedRetries = 0
     
     override init() {
         super.init()
@@ -87,6 +88,7 @@ extension AVARecorder: WebSocketDelegate, WebSocketPongDelegate {
     
     func websocketDidConnect(socket: WebSocket) {
         print("Connected")
+        failedRetries = 0
     }
     
     func websocketDidReceiveData(socket: WebSocket, data: Data) {
@@ -95,6 +97,11 @@ extension AVARecorder: WebSocketDelegate, WebSocketPongDelegate {
     
     func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
         print("DidDisconnect with error : \(error.debugDescription)")
+        failedRetries += 1
+        guard failedRetries < 5 else {
+            // prompt error
+            return
+        }
         socket.connect()
         print("tried to reconnect")
     }

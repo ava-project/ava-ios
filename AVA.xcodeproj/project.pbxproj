@@ -15,7 +15,6 @@
 		AB941F981F14ECA3000305DD /* AVAPushToTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */; };
 		AB941F9A1F14ECE0000305DD /* AVAPushToTalkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */; };
 		AB941F9C1F14F179000305DD /* AVARecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F9B1F14F179000305DD /* AVARecorder.swift */; };
-		AB9711DC1F1A29340071E2AB /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9711DB1F1A29340071E2AB /* SocketRocket.framework */; };
 		AB9711DF1F1A33C90071E2AB /* PairingWiFiAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9711DE1F1A33C90071E2AB /* PairingWiFiAddressViewController.swift */; };
 		AB9A51CF1EF6A169009A29FD /* AVAPushToTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A51CE1EF6A169009A29FD /* AVAPushToTalkViewController.swift */; };
 		AB9A51D31EF6A271009A29FD /* Pairing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A51D21EF6A271009A29FD /* Pairing.storyboard */; };
@@ -54,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9711DC1F1A29340071E2AB /* SocketRocket.framework in Frameworks */,
 				ABEC38061F1647D300A6BDE5 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +328,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SocketRocket.framework",
 			);
 			outputPaths = (
 			);

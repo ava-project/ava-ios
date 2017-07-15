@@ -15,8 +15,6 @@ protocol AVAPushToTalkViewDelegate: class {
 
 class AVAPushToTalkView: NibSettable {
     
-    let recorder = AVARecorder()
-
     var delegate: AVAPushToTalkViewDelegate?
     
     @IBOutlet weak var mainView: UIView!

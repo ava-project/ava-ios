@@ -15,6 +15,8 @@
 		AB941F981F14ECA3000305DD /* AVAPushToTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */; };
 		AB941F9A1F14ECE0000305DD /* AVAPushToTalkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */; };
 		AB941F9C1F14F179000305DD /* AVARecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F9B1F14F179000305DD /* AVARecorder.swift */; };
+		AB9711DC1F1A29340071E2AB /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9711DB1F1A29340071E2AB /* SocketRocket.framework */; };
+		AB9711DF1F1A33C90071E2AB /* PairingWiFiAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9711DE1F1A33C90071E2AB /* PairingWiFiAddressViewController.swift */; };
 		AB9A51CF1EF6A169009A29FD /* AVAPushToTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A51CE1EF6A169009A29FD /* AVAPushToTalkViewController.swift */; };
 		AB9A51D31EF6A271009A29FD /* Pairing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A51D21EF6A271009A29FD /* Pairing.storyboard */; };
 		AB9A51D91EF6A2E8009A29FD /* PushToTalk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A51D81EF6A2E8009A29FD /* PushToTalk.storyboard */; };
@@ -33,6 +35,9 @@
 		AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAPushToTalkView.swift; sourceTree = "<group>"; };
 		AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAPushToTalkView.xib; sourceTree = "<group>"; };
 		AB941F9B1F14F179000305DD /* AVARecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVARecorder.swift; sourceTree = "<group>"; };
+		AB9711D81F1A29230071E2AB /* AVA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AVA.xcodeproj; sourceTree = "<group>"; };
+		AB9711DB1F1A29340071E2AB /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = Carthage/Build/iOS/SocketRocket.framework; sourceTree = "<group>"; };
+		AB9711DE1F1A33C90071E2AB /* PairingWiFiAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingWiFiAddressViewController.swift; sourceTree = "<group>"; };
 		AB9A51CE1EF6A169009A29FD /* AVAPushToTalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAPushToTalkViewController.swift; sourceTree = "<group>"; };
 		AB9A51D21EF6A271009A29FD /* Pairing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pairing.storyboard; sourceTree = "<group>"; };
 		AB9A51D81EF6A2E8009A29FD /* PushToTalk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushToTalk.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9711DC1F1A29340071E2AB /* SocketRocket.framework in Frameworks */,
 				ABEC38061F1647D300A6BDE5 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,8 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				AB64DEE21EFD48B20024E291 /* PairingWiFiViewController.swift */,
-				AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */,
-				AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */,
+				AB9711DE1F1A33C90071E2AB /* PairingWiFiAddressViewController.swift */,
 			);
 			name = WiFi;
 			sourceTree = "<group>";
@@ -123,6 +128,20 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		AB9711D91F1A29230071E2AB /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB9711DD1F1A338D0071E2AB /* BT */ = {
+			isa = PBXGroup;
+			children = (
+				AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */,
+				AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */,
+			);
+			name = BT;
+			sourceTree = "<group>";
+		};
 		AB9A51D11EF6A264009A29FD /* Pairing */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				AB64DEDF1EFD3D9F0024E291 /* PairingMainViewController.swift */,
+				AB9711DD1F1A338D0071E2AB /* BT */,
 				AB64DEE11EFD48A40024E291 /* WiFi */,
 			);
 			name = ViewControllers;
@@ -218,6 +238,8 @@
 		ABABCE7E1E98E26100EAE31E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB9711DB1F1A29340071E2AB /* SocketRocket.framework */,
+				AB9711D81F1A29230071E2AB /* AVA.xcodeproj */,
 				ABEC38051F1647D300A6BDE5 /* Starscream.framework */,
 			);
 			name = Frameworks;
@@ -272,6 +294,12 @@
 			mainGroup = ABABCE5E1E98DDD100EAE31E;
 			productRefGroup = ABABCE681E98DDD100EAE31E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AB9711D91F1A29230071E2AB /* Products */;
+					ProjectRef = AB9711D81F1A29230071E2AB /* AVA.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ABABCE661E98DDD100EAE31E /* AVA */,
@@ -302,6 +330,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SocketRocket.framework",
 			);
 			outputPaths = (
 			);
@@ -323,6 +352,7 @@
 				ABABCE6B1E98DDD100EAE31E /* AppDelegate.swift in Sources */,
 				AB64DEE71EFD4AB30024E291 /* PairingLineInViewController.swift in Sources */,
 				AB64DEE51EFD4AA70024E291 /* PairingBTViewController.swift in Sources */,
+				AB9711DF1F1A33C90071E2AB /* PairingWiFiAddressViewController.swift in Sources */,
 				AB941F981F14ECA3000305DD /* AVAPushToTalkView.swift in Sources */,
 				AB64DEE01EFD3D9F0024E291 /* PairingMainViewController.swift in Sources */,
 			);

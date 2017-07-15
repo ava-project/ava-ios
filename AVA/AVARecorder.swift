@@ -8,6 +8,7 @@
 
 import AVFoundation
 import Starscream
+import SocketRocket
 
 class AVARecorder: NSObject {
     
@@ -20,7 +21,7 @@ class AVARecorder: NSObject {
         let fileUrl = path.appendingPathComponent("recording.wav")
         let session = AVAudioSession.sharedInstance()
         
-        let servUrl = URL(string: "ws://localhost:8765/")
+        let servUrl = URL(string: "ws://192.168.43.126:8765")
         socket = WebSocket(url: servUrl!)
         socket?.delegate = self
         socket?.connect()
@@ -29,9 +30,8 @@ class AVARecorder: NSObject {
             
             try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
             try session.setActive(true)
-            
             let settings = [
-                AVFormatIDKey: Int(kAudioFormatALaw),
+                AVFormatIDKey: Int(kAudioFormatLinearPCM),
                 AVSampleRateKey: 44100,
                 AVNumberOfChannelsKey: 2,
                 AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
@@ -66,15 +66,16 @@ extension AVARecorder: AVAudioRecorderDelegate {
             let data = try Data(contentsOf: filePath)
             
             socket?.write(data: data)
+            socket?.disconnect()
         } catch {
             print("Catched error \(error.localizedDescription)")
         }
         
-        print("Yeah")
+        print("Recording ended")
     }
     
     func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: Error?) {
-        print("Errorrr")
+        print("Error during recorder encode : \(error?.localizedDescription)")
     }
     
 }
@@ -90,11 +91,11 @@ extension AVARecorder: WebSocketDelegate, WebSocketPongDelegate {
     }
     
     func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
-        print("DidDisconnect")
+        print("DidDisconnect with error : \(error.debugDescription)")
     }
     
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {
-        print("DidReceiveMessage")
+        print("DidReceiveMessage with text : \(text)")
     }
     
     func websocketDidReceivePong(socket: WebSocket, data: Data?) {

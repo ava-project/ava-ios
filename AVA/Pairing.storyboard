@@ -44,28 +44,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppx-iO-etg">
-                                <rect key="frame" x="60" y="321" width="480" height="30"/>
+                                <rect key="frame" x="56" y="388" width="263" height="30"/>
                                 <state key="normal" title="WiFi"/>
                                 <connections>
                                     <segue destination="Nv6-Vw-Ukx" kind="show" id="yxT-dk-C7R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lx2-kP-UBC">
-                                <rect key="frame" x="60" y="399" width="480" height="30"/>
+                                <rect key="frame" x="56" y="466" width="263" height="30"/>
                                 <state key="normal" title="Bluetooth"/>
                                 <connections>
                                     <segue destination="guK-tM-ABa" kind="show" id="Exc-bG-o2R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNP-Ki-Oa0">
-                                <rect key="frame" x="60" y="476" width="480" height="30"/>
+                                <rect key="frame" x="56" y="543" width="263" height="30"/>
                                 <state key="normal" title="Line In"/>
                                 <connections>
                                     <segue destination="9XP-1F-gvS" kind="show" id="Bai-5I-YPK"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7J-5f-tiu">
-                                <rect key="frame" x="20" y="0.0" width="560" height="311"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="378"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -112,13 +112,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnZ-ei-UCP">
-                                <rect key="frame" x="10" y="20" width="580" height="37"/>
+                                <rect key="frame" x="10" y="20" width="355" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3N-s2-MJc">
-                                <rect key="frame" x="40" y="87" width="520" height="21"/>
+                                <rect key="frame" x="36" y="87" width="303" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -152,13 +152,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8T-ir-0Rh">
-                                <rect key="frame" x="30" y="20" width="560" height="37"/>
+                                <rect key="frame" x="26" y="20" width="343" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZu-gL-Lv3">
-                                <rect key="frame" x="20" y="87" width="560" height="21"/>
+                                <rect key="frame" x="20" y="87" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -192,7 +192,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXd-lC-pnw">
-                                <rect key="frame" x="20" y="45" width="560" height="391"/>
+                                <rect key="frame" x="20" y="45" width="335" height="458"/>
                                 <string key="text">Welcome to the WiFi pairing wizard! We will take you through the necessary steps to connect your phone to AVA and use it as your microphone input.
 
 Please make sure AVA is ready to be paired, and proceed to the next step!</string>
@@ -201,11 +201,14 @@ Please make sure AVA is ready to be paired, and proceed to the next step!</strin
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSF-w8-cej">
-                                <rect key="frame" x="60" y="476" width="480" height="30"/>
+                                <rect key="frame" x="56" y="543" width="263" height="30"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="xlu-mO-Yv1" kind="show" id="ceL-Dp-fxo"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-Wifi" translatesAutoresizingMaskIntoConstraints="NO" id="4fk-1a-vkc">
-                                <rect key="frame" x="30" y="10" width="540" height="25"/>
+                                <rect key="frame" x="26" y="10" width="323" height="25"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -230,6 +233,58 @@ Please make sure AVA is ready to be paired, and proceed to the next step!</strin
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3k-nP-rrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1185" y="-847"/>
+        </scene>
+        <!--Pairing Wi Fi View Controller-->
+        <scene sceneID="jlp-td-EoB">
+            <objects>
+                <viewController id="xlu-mO-Yv1" customClass="PairingWiFiViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HxP-eD-o3I"/>
+                        <viewControllerLayoutGuide type="bottom" id="5yW-SR-mET"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dDS-ap-WxZ">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ep-Lk-aVM">
+                                <rect key="frame" x="20" y="45" width="335" height="458"/>
+                                <string key="text">Welcome to the WiFi pairing wizard! We will take you through the necessary steps to connect your phone to AVA and use it as your microphone input.
+
+Please make sure AVA is ready to be paired, and proceed to the next step!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-sO-GoI">
+                                <rect key="frame" x="56" y="543" width="263" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-Wifi" translatesAutoresizingMaskIntoConstraints="NO" id="Z65-fy-CnT">
+                                <rect key="frame" x="26" y="10" width="323" height="25"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8ep-Lk-aVM" firstAttribute="top" secondItem="Z65-fy-CnT" secondAttribute="bottom" constant="10" id="GKX-vD-DQg"/>
+                            <constraint firstItem="Z65-fy-CnT" firstAttribute="top" secondItem="HxP-eD-o3I" secondAttribute="bottom" constant="10" id="K8k-AD-h0J"/>
+                            <constraint firstItem="Z65-fy-CnT" firstAttribute="leading" secondItem="dDS-ap-WxZ" secondAttribute="leadingMargin" constant="10" id="OIJ-eW-o8V"/>
+                            <constraint firstItem="Auq-sO-GoI" firstAttribute="top" secondItem="8ep-Lk-aVM" secondAttribute="bottom" constant="40" id="QTs-9K-Tyl"/>
+                            <constraint firstItem="Auq-sO-GoI" firstAttribute="leading" secondItem="dDS-ap-WxZ" secondAttribute="leadingMargin" constant="40" id="R8x-I7-PfW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z65-fy-CnT" secondAttribute="trailing" constant="10" id="j1Y-sz-J7j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Auq-sO-GoI" secondAttribute="trailing" constant="40" id="qIa-Dg-sVp"/>
+                            <constraint firstItem="8ep-Lk-aVM" firstAttribute="leading" secondItem="dDS-ap-WxZ" secondAttribute="leading" constant="20" id="rWl-2v-Kgz"/>
+                            <constraint firstAttribute="trailing" secondItem="8ep-Lk-aVM" secondAttribute="trailing" constant="20" id="tid-G0-nji"/>
+                            <constraint firstItem="5yW-SR-mET" firstAttribute="top" secondItem="Auq-sO-GoI" secondAttribute="bottom" constant="30" id="zsx-2R-3kf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iconImage" destination="Z65-fy-CnT" id="n3G-ff-KUk"/>
+                        <outlet property="nextButton" destination="Auq-sO-GoI" id="8Sk-jB-tIx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fal-se-gVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1962" y="-848"/>
         </scene>
     </scenes>
     <resources>

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +21,22 @@
                     <view key="view" contentMode="scaleToFill" id="lWS-oG-pqu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Y-qK-6fc">
+                                <rect key="frame" x="26" y="40" width="323" height="50.5"/>
+                                <string key="text">Tap and hold to talk
+Release to send</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.15686274510000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z6Y-qK-6fc" firstAttribute="leading" secondItem="lWS-oG-pqu" secondAttribute="leadingMargin" constant="10" id="2JJ-km-hiX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z6Y-qK-6fc" secondAttribute="trailing" constant="10" id="GvB-eO-z85"/>
+                            <constraint firstItem="Z6Y-qK-6fc" firstAttribute="top" secondItem="QM3-al-zrD" secondAttribute="bottom" constant="20" id="Kj5-03-Tmj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpd-tM-7HK" userLabel="First Responder" sceneMemberID="firstResponder"/>

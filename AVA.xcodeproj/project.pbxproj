@@ -167,13 +167,13 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		AB9A51D61EF6A2C5009A29FD /* PustToTalk */ = {
+		AB9A51D61EF6A2C5009A29FD /* PushToTalk */ = {
 			isa = PBXGroup;
 			children = (
 				AB9A51DB1EF6A2F3009A29FD /* Storyboards */,
 				AB9A51DA1EF6A2ED009A29FD /* ViewControllers */,
 			);
-			name = PustToTalk;
+			name = PushToTalk;
 			sourceTree = "<group>";
 		};
 		AB9A51D71EF6A2CC009A29FD /* Stories */ = {
@@ -181,7 +181,7 @@
 			children = (
 				AB68BB811F16CDD800FBA946 /* Launch */,
 				AB9A51D11EF6A264009A29FD /* Pairing */,
-				AB9A51D61EF6A2C5009A29FD /* PustToTalk */,
+				AB9A51D61EF6A2C5009A29FD /* PushToTalk */,
 				AB9711D71F1902750071E2AB /* Views */,
 			);
 			name = Stories;

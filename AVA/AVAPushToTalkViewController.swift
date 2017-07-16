@@ -11,10 +11,12 @@ import UIKit
 
 class AVAPushToTalkViewController: UIViewController {
 
-    let recorder = AVARecorder()
+    var recorder: AVARecorder?
+    var address: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        recorder = AVARecorder(url: address)
         let pushTalkView = AVAPushToTalkView(frame: view.frame)
         pushTalkView.delegate = self
         self.view.addSubview(pushTalkView)
@@ -41,12 +43,12 @@ class AVAPushToTalkViewController: UIViewController {
 extension AVAPushToTalkViewController: AVAPushToTalkViewDelegate {
     
     func pushToTalkView(didReceiveTouchUp: Bool) {
-        recorder.stop()
+        recorder?.stop()
         
     }
     
     func pushToTalkView(didReceiveTouchDown: Bool) {
-        recorder.record()
+        recorder?.record()
     }
     
 }

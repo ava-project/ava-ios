@@ -16,15 +16,16 @@ class AVARecorder: NSObject {
     var socket: WebSocket?
     var failedRetries = 0
     
-    override init() {
+    init(url: String) {
         super.init()
         let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let fileUrl = path.appendingPathComponent("recording.wav")
         let session = AVAudioSession.sharedInstance()
         
-        let servUrl = URL(string: "ws://192.168.43.126:8765")
+        let servUrl = URL(string: "ws://\(url)")
         socket = WebSocket(url: servUrl!)
         socket?.delegate = self
+        print("Connecting on \(servUrl?.absoluteString)")
         socket?.connect()
         
         do {

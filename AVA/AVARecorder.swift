@@ -10,11 +10,24 @@ import AVFoundation
 import Starscream
 import SocketRocket
 
+protocol AVARecorderDelegate: class {
+    
+    func recorder(recorder: AVARecorder, didFinishRecording: Bool, at filePath: URL)
+    func recorder(recorder: AVARecorder, didFailWhileEncoding: Bool)
+    func recorder(recorder: AVARecorder, didConnectOn socket: WebSocket)
+    func recorder(recorder: AVARecorder, didDisconnectOn socket: WebSocket, with error: NSError?)
+    func recorder(recorder: AVARecorder, didReceivePong on: WebSocket)
+    func recorder(recorder: AVARecorder, didReceiveData data: Data, on: WebSocket)
+    func recorder(recorder: AVARecorder, didReceiveMessage message: String, on: WebSocket)
+    
+}
+
 class AVARecorder: NSObject {
     
     var recorder: AVAudioRecorder?
     var socket: WebSocket?
     var failedRetries = 0
+    var delegate: AVARecorderDelegate?
     
     init(url: String) {
         super.init()
@@ -98,6 +111,7 @@ extension AVARecorder: WebSocketDelegate, WebSocketPongDelegate {
     
     func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
         print("DidDisconnect with error : \(error.debugDescription)")
+        self.delegate?.recorder(recorder: self, didDisconnectOn: socket, with: error)
         failedRetries += 1
         guard failedRetries < 5 else {
             // prompt error

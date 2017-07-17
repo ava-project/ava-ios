@@ -22,6 +22,7 @@
 		ABABCE6B1E98DDD100EAE31E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABCE6A1E98DDD100EAE31E /* AppDelegate.swift */; };
 		ABABCE721E98DDD100EAE31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABABCE711E98DDD100EAE31E /* Assets.xcassets */; };
 		ABABCE751E98DDD100EAE31E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABABCE731E98DDD100EAE31E /* LaunchScreen.storyboard */; };
+		ABB9F0181F1B96EF0003B821 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB9F0171F1B96EF0003B821 /* Chameleon.framework */; };
 		ABEC38061F1647D300A6BDE5 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEC38051F1647D300A6BDE5 /* Starscream.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		ABABCE711E98DDD100EAE31E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABABCE741E98DDD100EAE31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABABCE761E98DDD100EAE31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABB9F0171F1B96EF0003B821 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		ABEC38051F1647D300A6BDE5 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB9F0181F1B96EF0003B821 /* Chameleon.framework in Frameworks */,
 				ABEC38061F1647D300A6BDE5 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +239,7 @@
 		ABABCE7E1E98E26100EAE31E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABB9F0171F1B96EF0003B821 /* Chameleon.framework */,
 				AB9711DB1F1A29340071E2AB /* SocketRocket.framework */,
 				AB9711D81F1A29230071E2AB /* AVA.xcodeproj */,
 				ABEC38051F1647D300A6BDE5 /* Starscream.framework */,
@@ -328,6 +332,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
 			);
 			outputPaths = (
 			);

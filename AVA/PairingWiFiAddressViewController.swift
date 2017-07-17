@@ -12,6 +12,7 @@ class PairingWiFiAddressViewController: UIViewController {
 
     
     
+    
     @IBOutlet weak var addressTextField: UITextField!
     
     @IBOutlet weak var nextButton: UIButton! {
@@ -38,11 +39,16 @@ class PairingWiFiAddressViewController: UIViewController {
         guard let addr = addressTextField.text else {
             return
         }
+        guard addr != "" else {
+            //TODO: - show error
+            return
+        }
         
         let sb = UIStoryboard.init(name: "PushToTalk", bundle: nil)
         let vc = sb.instantiateInitialViewController() as! AVAPushToTalkViewController
         vc.address = addr
-        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        //self.present(vc, animated: true, completion: nil)
     }
     
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!

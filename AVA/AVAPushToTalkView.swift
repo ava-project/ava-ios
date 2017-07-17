@@ -19,12 +19,20 @@ class AVAPushToTalkView: NibSettable {
     
     @IBOutlet weak var mainView: UIView!
     
+    var activityIndicatorView: UIActivityIndicatorView?
+    
     @IBAction func actionButtonDown(_ sender: Any) {
         delegate?.pushToTalkView(didReceiveTouchDown: true)
+       /* UIView.animate(withDuration: 0.1, animations: {
+            self.backgroundColor = UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 0.5)
+        })*/
     }
     
     @IBAction func actionButtonUpInside(_ sender: Any) {
         delegate?.pushToTalkView(didReceiveTouchUp: true)
+       /* UIView.animate(withDuration: 0.1, animations: {
+            self.backgroundColor = UIColor.clear
+        })*/
     }
     
     @IBAction func actionButtonUpOutside(_ sender: Any) {
@@ -34,6 +42,7 @@ class AVAPushToTalkView: NibSettable {
     
     override func setupUI() {
         super.setupUI()
+        
     }
     
 }

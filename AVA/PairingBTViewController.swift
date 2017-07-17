@@ -15,6 +15,26 @@ class PairingBTViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0)
+        self.navigationItem.title = "Bluetooth"
+    }
+    
+    @IBOutlet weak var nextButton: UIButton! {
+        didSet {
+            nextButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            nextButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            nextButton.backgroundColor = UIColor.clear
+            nextButton.layer.borderWidth = 1.0
+            nextButton.layer.cornerRadius = 8
+            nextButton.layer.borderColor = UIColor.white.cgColor
+            nextButton.tintColor = UIColor.white
+        }
+    }
+    
+    @IBOutlet weak var iconImage: UIImageView! {
+        didSet {
+            iconImage.image = iconImage.image?.withRenderingMode(.alwaysTemplate)
+            iconImage.tintColor = UIColor.white
+        }
     }
 
     override func didReceiveMemoryWarning() {

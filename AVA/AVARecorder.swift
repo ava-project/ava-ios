@@ -8,7 +8,6 @@
 
 import AVFoundation
 import Starscream
-import SocketRocket
 
 protocol AVARecorderDelegate: class {
     

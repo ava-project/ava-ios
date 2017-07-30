@@ -44,9 +44,10 @@ class PairingWiFiAddressViewController: UIViewController {
             return
         }
         
-        let sb = UIStoryboard.init(name: "PushToTalk", bundle: nil)
-        let vc = sb.instantiateInitialViewController() as! AVAPushToTalkViewController
-        vc.address = addr
+        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! HomeTabBarController
+        let ptt = vc.childViewControllers.first as! AVAPushToTalkViewController
+        ptt.address = addr
         self.navigationController?.pushViewController(vc, animated: true)
         //self.present(vc, animated: true, completion: nil)
     }

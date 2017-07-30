@@ -10,10 +10,10 @@
 		2DD1AFF31F2E3B9800C514B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD1AFF21F2E3B9800C514B0 /* Main.storyboard */; };
 		2DD1AFF51F2E3BFD00C514B0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1AFF41F2E3BFD00C514B0 /* SettingsTableViewController.swift */; };
 		2DD1AFF71F2E3CB100C514B0 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1AFF61F2E3CB100C514B0 /* HomeTabBarController.swift */; };
+		2DD1AFFA1F2E4A6A00C514B0 /* PairingLineInOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1AFF91F2E4A6A00C514B0 /* PairingLineInOSViewController.swift */; };
 		AB64DEE01EFD3D9F0024E291 /* PairingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEDF1EFD3D9F0024E291 /* PairingMainViewController.swift */; };
 		AB64DEE31EFD48B20024E291 /* PairingWiFiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE21EFD48B20024E291 /* PairingWiFiViewController.swift */; };
 		AB64DEE51EFD4AA70024E291 /* PairingBTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */; };
-		AB64DEE71EFD4AB30024E291 /* PairingLineInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */; };
 		AB941F941F14EC1C000305DD /* NibSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F931F14EC1C000305DD /* NibSettable.swift */; };
 		AB941F981F14ECA3000305DD /* AVAPushToTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */; };
 		AB941F9A1F14ECE0000305DD /* AVAPushToTalkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */; };
@@ -33,10 +33,10 @@
 		2DD1AFF21F2E3B9800C514B0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2DD1AFF41F2E3BFD00C514B0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		2DD1AFF61F2E3CB100C514B0 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		2DD1AFF91F2E4A6A00C514B0 /* PairingLineInOSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingLineInOSViewController.swift; sourceTree = "<group>"; };
 		AB64DEDF1EFD3D9F0024E291 /* PairingMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingMainViewController.swift; sourceTree = "<group>"; };
 		AB64DEE21EFD48B20024E291 /* PairingWiFiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingWiFiViewController.swift; sourceTree = "<group>"; };
 		AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingBTViewController.swift; sourceTree = "<group>"; };
-		AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingLineInViewController.swift; sourceTree = "<group>"; };
 		AB941F931F14EC1C000305DD /* NibSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibSettable.swift; sourceTree = "<group>"; };
 		AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAPushToTalkView.swift; sourceTree = "<group>"; };
 		AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAPushToTalkView.xib; sourceTree = "<group>"; };
@@ -69,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DD1AFF81F2E4A3F00C514B0 /* LineIn */ = {
+			isa = PBXGroup;
+			children = (
+				2DD1AFF91F2E4A6A00C514B0 /* PairingLineInOSViewController.swift */,
+			);
+			name = LineIn;
+			sourceTree = "<group>";
+		};
 		AB64DEE11EFD48A40024E291 /* WiFi */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */,
-				AB64DEE61EFD4AB30024E291 /* PairingLineInViewController.swift */,
 			);
 			name = BT;
 			sourceTree = "<group>";
@@ -154,6 +161,7 @@
 			children = (
 				AB9A51D41EF6A2A9009A29FD /* Storyboards */,
 				AB9A51D51EF6A2B6009A29FD /* ViewControllers */,
+				2DD1AFF81F2E4A3F00C514B0 /* LineIn */,
 			);
 			name = Pairing;
 			sourceTree = "<group>";
@@ -359,12 +367,12 @@
 			files = (
 				AB941F941F14EC1C000305DD /* NibSettable.swift in Sources */,
 				AB9A51CF1EF6A169009A29FD /* AVAPushToTalkViewController.swift in Sources */,
+				2DD1AFFA1F2E4A6A00C514B0 /* PairingLineInOSViewController.swift in Sources */,
 				2DD1AFF71F2E3CB100C514B0 /* HomeTabBarController.swift in Sources */,
 				AB941F9C1F14F179000305DD /* AVARecorder.swift in Sources */,
 				2DD1AFF51F2E3BFD00C514B0 /* SettingsTableViewController.swift in Sources */,
 				AB64DEE31EFD48B20024E291 /* PairingWiFiViewController.swift in Sources */,
 				ABABCE6B1E98DDD100EAE31E /* AppDelegate.swift in Sources */,
-				AB64DEE71EFD4AB30024E291 /* PairingLineInViewController.swift in Sources */,
 				AB64DEE51EFD4AA70024E291 /* PairingBTViewController.swift in Sources */,
 				AB9711DF1F1A33C90071E2AB /* PairingWiFiAddressViewController.swift in Sources */,
 				AB941F981F14ECA3000305DD /* AVAPushToTalkView.swift in Sources */,

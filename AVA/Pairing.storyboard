@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3hI-K3-fnh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3hI-K3-fnh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -44,29 +44,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppx-iO-etg">
-                                <rect key="frame" x="56" y="388" width="263" height="30"/>
+                                <rect key="frame" x="56" y="323" width="263" height="30"/>
                                 <state key="normal" title="WiFi"/>
                                 <connections>
                                     <segue destination="Nv6-Vw-Ukx" kind="show" id="yxT-dk-C7R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lx2-kP-UBC">
-                                <rect key="frame" x="56" y="466" width="263" height="30"/>
+                                <rect key="frame" x="56" y="423" width="263" height="30"/>
                                 <state key="normal" title="Bluetooth"/>
                                 <connections>
                                     <segue destination="guK-tM-ABa" kind="show" id="Exc-bG-o2R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNP-Ki-Oa0">
-                                <rect key="frame" x="56" y="543" width="263" height="30"/>
+                                <rect key="frame" x="56" y="523" width="263" height="30"/>
                                 <state key="normal" title="Line In"/>
                                 <connections>
                                     <segue destination="9XP-1F-gvS" kind="show" id="Bai-5I-YPK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="AVALogoBW" translatesAutoresizingMaskIntoConstraints="NO" id="XNR-XG-53j">
-                                <rect key="frame" x="20" y="0.0" width="335" height="378"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -74,18 +71,14 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Lx2-kP-UBC" secondAttribute="trailing" constant="40" id="3Yw-fj-sIi"/>
                             <constraint firstItem="ppx-iO-etg" firstAttribute="centerX" secondItem="Bas-8d-wy0" secondAttribute="centerX" id="4hq-6L-txi"/>
                             <constraint firstItem="MNP-Ki-Oa0" firstAttribute="leading" secondItem="Bas-8d-wy0" secondAttribute="leadingMargin" constant="40" id="CPL-ky-sdB"/>
-                            <constraint firstItem="XNR-XG-53j" firstAttribute="leading" secondItem="Bas-8d-wy0" secondAttribute="leading" constant="20" id="NlC-bm-buc"/>
-                            <constraint firstItem="Lx2-kP-UBC" firstAttribute="top" secondItem="ppx-iO-etg" secondAttribute="bottom" constant="48" id="Of9-be-gdI"/>
+                            <constraint firstItem="Lx2-kP-UBC" firstAttribute="top" secondItem="ppx-iO-etg" secondAttribute="bottom" constant="70" id="Of9-be-gdI"/>
                             <constraint firstItem="MNP-Ki-Oa0" firstAttribute="centerX" secondItem="Bas-8d-wy0" secondAttribute="centerX" id="Wk8-3r-YrZ"/>
                             <constraint firstItem="Lx2-kP-UBC" firstAttribute="leading" secondItem="Bas-8d-wy0" secondAttribute="leadingMargin" constant="40" id="Yoh-Vb-e64"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MNP-Ki-Oa0" secondAttribute="trailing" constant="40" id="a2y-p6-Swh"/>
-                            <constraint firstItem="oOD-ba-dOU" firstAttribute="top" secondItem="MNP-Ki-Oa0" secondAttribute="bottom" constant="30" id="d56-7z-SuH"/>
+                            <constraint firstItem="oOD-ba-dOU" firstAttribute="top" secondItem="MNP-Ki-Oa0" secondAttribute="bottom" constant="50" id="d56-7z-SuH"/>
                             <constraint firstItem="Lx2-kP-UBC" firstAttribute="centerX" secondItem="Bas-8d-wy0" secondAttribute="centerX" id="m7M-5O-KBJ"/>
-                            <constraint firstItem="XNR-XG-53j" firstAttribute="top" secondItem="F6W-sX-M6j" secondAttribute="bottom" id="qp2-dd-ase"/>
-                            <constraint firstAttribute="trailing" secondItem="XNR-XG-53j" secondAttribute="trailing" constant="20" id="uGv-ZX-FD0"/>
                             <constraint firstItem="ppx-iO-etg" firstAttribute="leading" secondItem="Bas-8d-wy0" secondAttribute="leadingMargin" constant="40" id="vkg-yB-BZq"/>
-                            <constraint firstItem="ppx-iO-etg" firstAttribute="top" secondItem="XNR-XG-53j" secondAttribute="bottom" constant="10" id="xge-Hj-bSz"/>
-                            <constraint firstItem="MNP-Ki-Oa0" firstAttribute="top" secondItem="Lx2-kP-UBC" secondAttribute="bottom" constant="47" id="yXl-qH-FJK"/>
+                            <constraint firstItem="MNP-Ki-Oa0" firstAttribute="top" secondItem="Lx2-kP-UBC" secondAttribute="bottom" constant="70" id="yXl-qH-FJK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HaH-8D-op1"/>
@@ -99,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="-378" y="-161"/>
         </scene>
-        <!--Pairing Line In View Controller-->
+        <!--Pairing Line InOS View Controller-->
         <scene sceneID="TbG-ty-EKg">
             <objects>
-                <viewController id="9XP-1F-gvS" customClass="PairingLineInViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9XP-1F-gvS" customClass="PairingLineInOSViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qro-Rl-Z4Q"/>
                         <viewControllerLayoutGuide type="bottom" id="2Kk-v1-dqw"/>
@@ -111,29 +104,56 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnZ-ei-UCP">
-                                <rect key="frame" x="10" y="20" width="355" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3N-s2-MJc">
-                                <rect key="frame" x="36" y="87" width="303" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YL-AV-lHL">
+                                <rect key="frame" x="56" y="483" width="263" height="30"/>
+                                <state key="normal" title="Windows"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J66-qp-UU0">
+                                <rect key="frame" x="56" y="533" width="263" height="30"/>
+                                <state key="normal" title="Linux"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-Bluetooth" translatesAutoresizingMaskIntoConstraints="NO" id="eBH-rF-MNO">
+                                <rect key="frame" x="10" y="10" width="355" height="25"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="247" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgk-KR-j16">
+                                <rect key="frame" x="20" y="45" width="335" height="378"/>
+                                <string key="text">Welcome to the Line-In pairing wizard!
+
+Please choose the OS on which AVA is installed.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw8-6F-YSC">
+                                <rect key="frame" x="56" y="433" width="263" height="30"/>
+                                <state key="normal" title="macOS"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VnZ-ei-UCP" firstAttribute="leading" secondItem="Fem-Id-Zci" secondAttribute="leading" constant="10" id="63O-yS-CAP"/>
-                            <constraint firstItem="VnZ-ei-UCP" firstAttribute="top" secondItem="Qro-Rl-Z4Q" secondAttribute="bottom" constant="20" id="8Mv-cf-2Wt"/>
-                            <constraint firstItem="k3N-s2-MJc" firstAttribute="top" secondItem="VnZ-ei-UCP" secondAttribute="bottom" constant="30" id="OdG-A4-Afy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="k3N-s2-MJc" secondAttribute="trailing" constant="20" id="ZpK-hW-4bE"/>
-                            <constraint firstItem="k3N-s2-MJc" firstAttribute="leading" secondItem="Fem-Id-Zci" secondAttribute="leadingMargin" constant="20" id="ieM-xB-teO"/>
-                            <constraint firstAttribute="trailing" secondItem="VnZ-ei-UCP" secondAttribute="trailing" constant="10" id="xcC-4A-ksY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lw8-6F-YSC" secondAttribute="trailing" constant="40" id="0ff-GS-npm"/>
+                            <constraint firstItem="J66-qp-UU0" firstAttribute="leading" secondItem="Fem-Id-Zci" secondAttribute="leadingMargin" constant="40" id="23T-1I-D9m"/>
+                            <constraint firstItem="Tgk-KR-j16" firstAttribute="top" secondItem="eBH-rF-MNO" secondAttribute="bottom" constant="10" id="2V7-3z-VUs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1YL-AV-lHL" secondAttribute="trailing" constant="40" id="7Ke-VM-J7E"/>
+                            <constraint firstItem="Lw8-6F-YSC" firstAttribute="leading" secondItem="Fem-Id-Zci" secondAttribute="leadingMargin" constant="40" id="M36-Mn-yWR"/>
+                            <constraint firstItem="1YL-AV-lHL" firstAttribute="top" secondItem="Lw8-6F-YSC" secondAttribute="bottom" constant="20" id="M3B-DN-Gjq"/>
+                            <constraint firstAttribute="trailing" secondItem="eBH-rF-MNO" secondAttribute="trailing" constant="10" id="ZQ8-JR-1tg"/>
+                            <constraint firstItem="Tgk-KR-j16" firstAttribute="leading" secondItem="Fem-Id-Zci" secondAttribute="leading" constant="20" id="a5e-UY-T8Y"/>
+                            <constraint firstItem="2Kk-v1-dqw" firstAttribute="top" secondItem="J66-qp-UU0" secondAttribute="bottom" constant="40" id="ah5-o1-jwP"/>
+                            <constraint firstItem="J66-qp-UU0" firstAttribute="top" secondItem="1YL-AV-lHL" secondAttribute="bottom" constant="20" id="gh5-qx-fyN"/>
+                            <constraint firstItem="eBH-rF-MNO" firstAttribute="top" secondItem="Qro-Rl-Z4Q" secondAttribute="bottom" constant="10" id="hTF-o2-mgV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J66-qp-UU0" secondAttribute="trailing" constant="40" id="m1j-IO-NAr"/>
+                            <constraint firstAttribute="trailing" secondItem="Tgk-KR-j16" secondAttribute="trailing" constant="20" id="mHy-Xb-QXb"/>
+                            <constraint firstItem="1YL-AV-lHL" firstAttribute="leading" secondItem="Fem-Id-Zci" secondAttribute="leadingMargin" constant="40" id="u8a-gt-cRx"/>
+                            <constraint firstItem="eBH-rF-MNO" firstAttribute="leading" secondItem="Fem-Id-Zci" secondAttribute="leading" constant="10" id="zH6-0D-0Kl"/>
+                            <constraint firstItem="Lw8-6F-YSC" firstAttribute="top" secondItem="Tgk-KR-j16" secondAttribute="bottom" constant="10" id="zvR-52-1Hz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="linuxButton" destination="J66-qp-UU0" id="urz-vf-kgb"/>
+                        <outlet property="macOSButton" destination="Lw8-6F-YSC" id="a4d-To-wL4"/>
+                        <outlet property="windowsButton" destination="1YL-AV-lHL" id="jFq-Hv-cS3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbP-ml-YCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,13 +190,13 @@ Please make sure AVA is ready to be paired, and proceed to the next step!</strin
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QER-q1-wpU" firstAttribute="top" secondItem="zey-o8-cc7" secondAttribute="bottom" constant="30" id="0NI-15-Beq"/>
                             <constraint firstItem="ayI-ix-fXx" firstAttribute="leading" secondItem="bfB-Za-vVC" secondAttribute="leadingMargin" constant="10" id="0W7-fC-9ZW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ayI-ix-fXx" secondAttribute="trailing" constant="10" id="0sk-WC-Mz7"/>
                             <constraint firstItem="zey-o8-cc7" firstAttribute="top" secondItem="mZu-gL-Lv3" secondAttribute="bottom" constant="40" id="3tw-BT-MYb"/>
                             <constraint firstItem="mZu-gL-Lv3" firstAttribute="top" secondItem="ayI-ix-fXx" secondAttribute="bottom" constant="10" id="GbP-9w-tIQ"/>
                             <constraint firstItem="mZu-gL-Lv3" firstAttribute="leading" secondItem="bfB-Za-vVC" secondAttribute="leading" constant="20" id="MJW-VQ-iju"/>
-                            <constraint firstItem="ayI-ix-fXx" firstAttribute="top" secondItem="1rH-iU-HAI" secondAttribute="bottom" constant="10" id="hvd-u2-UK5"/>
+                            <constraint firstItem="QER-q1-wpU" firstAttribute="top" secondItem="zey-o8-cc7" secondAttribute="bottom" constant="30" id="eoM-vI-xQj"/>
+                            <constraint firstItem="ayI-ix-fXx" firstAttribute="top" secondItem="1rH-iU-HAI" secondAttribute="bottom" constant="10" id="fbF-T5-fH1"/>
                             <constraint firstItem="zey-o8-cc7" firstAttribute="leading" secondItem="bfB-Za-vVC" secondAttribute="leadingMargin" constant="40" id="jCv-SO-TtY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zey-o8-cc7" secondAttribute="trailing" constant="40" id="tzC-DK-e6c"/>
                             <constraint firstAttribute="trailing" secondItem="mZu-gL-Lv3" secondAttribute="trailing" constant="20" id="vi9-Ok-AoM"/>
@@ -311,7 +331,6 @@ Please make sure AVA is ready to be paired, and proceed to the next step!</strin
         </scene>
     </scenes>
     <resources>
-        <image name="AVALogoBW" width="500" height="341"/>
         <image name="Icon-Bluetooth" width="25" height="25"/>
         <image name="Icon-Wifi" width="25" height="25"/>
     </resources>

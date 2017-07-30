@@ -121,7 +121,7 @@ extension AVARecorder: WebSocketDelegate, WebSocketPongDelegate {
     }
     
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {
-        print("DidReceiveMessage with text : \(text)")
+        print("DidReceiveMessage on socket: \(socket.description) with text : \(text)")
     }
     
     func websocketDidReceivePong(socket: WebSocket, data: Data?) {

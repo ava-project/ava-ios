@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3hI-K3-fnh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3hI-K3-fnh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -107,10 +107,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YL-AV-lHL">
                                 <rect key="frame" x="56" y="483" width="263" height="30"/>
                                 <state key="normal" title="Windows"/>
+                                <connections>
+                                    <segue destination="3Ta-zh-V2d" kind="show" id="5iY-Gf-9fe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J66-qp-UU0">
                                 <rect key="frame" x="56" y="533" width="263" height="30"/>
                                 <state key="normal" title="Linux"/>
+                                <connections>
+                                    <segue destination="3qS-6U-hxz" kind="show" id="ftP-k1-owQ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-Bluetooth" translatesAutoresizingMaskIntoConstraints="NO" id="eBH-rF-MNO">
                                 <rect key="frame" x="10" y="10" width="355" height="25"/>
@@ -127,6 +133,9 @@ Please choose the OS on which AVA is installed.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw8-6F-YSC">
                                 <rect key="frame" x="56" y="433" width="263" height="30"/>
                                 <state key="normal" title="macOS"/>
+                                <connections>
+                                    <segue destination="F44-gr-yOe" kind="show" id="wXP-TS-A6F"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -158,6 +167,60 @@ Please choose the OS on which AVA is installed.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbP-ml-YCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1185" y="567"/>
+        </scene>
+        <!--Pairing Line InmacOS View Controller-->
+        <scene sceneID="Y52-Fs-BEb">
+            <objects>
+                <viewController id="F44-gr-yOe" customClass="PairingLineInmacOSViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m5m-xw-Zqz"/>
+                        <viewControllerLayoutGuide type="bottom" id="lmz-C4-oT4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LBJ-mg-g6F">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjP-4M-V7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2247" y="126"/>
+        </scene>
+        <!--Pairing Line In Windows View Controller-->
+        <scene sceneID="48Q-tJ-bvS">
+            <objects>
+                <viewController id="3Ta-zh-V2d" customClass="PairingLineInWindowsViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JIM-W1-2Zf"/>
+                        <viewControllerLayoutGuide type="bottom" id="yGI-vF-Usp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K0a-39-yoG">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sr6-5w-hbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="818"/>
+        </scene>
+        <!--Pairing Line In Linux View Controller-->
+        <scene sceneID="e21-aQ-sMu">
+            <objects>
+                <viewController id="3qS-6U-hxz" customClass="PairingLineInLinuxViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="obv-yQ-L2y"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCo-bO-P3P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hvO-EI-oha">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oo1-6z-f05" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="1534"/>
         </scene>
         <!--PairingBT View Controller-->
         <scene sceneID="EW0-FR-slg">

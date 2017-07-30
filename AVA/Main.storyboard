@@ -18,6 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="1" green="0.27450980390000002" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="CSp-xX-FGf" kind="relationship" relationship="viewControllers" id="pzb-NY-4Al"/>
@@ -45,7 +47,7 @@
                                 <string key="text">Tap and hold to talk
 Release to send</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" red="1" green="0.15686274510000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.27450980392156865" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uS8-0T-svL">
@@ -72,7 +74,7 @@ Release to send</string>
                             <constraint firstItem="bCN-Sv-m2D" firstAttribute="top" secondItem="uS8-0T-svL" secondAttribute="bottom" constant="20" id="vaX-Ib-Mcv"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Talk" id="5CC-Pe-OKt"/>
+                    <tabBarItem key="tabBarItem" title="Talk" image="Bar-Mic" selectedImage="Bar-Mic-Filled" id="5CC-Pe-OKt"/>
                     <connections>
                         <outlet property="activityIndicatorView" destination="uS8-0T-svL" id="iJz-Re-47d"/>
                         <outlet property="infoLabel" destination="bCN-Sv-m2D" id="Ckb-LT-1re"/>
@@ -125,11 +127,18 @@ Release to send</string>
                             <outlet property="delegate" destination="GTS-Gs-ESN" id="3oL-jH-0Oa"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Settings" id="CRo-0h-8h4"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Bar-Cog" selectedImage="Bar-Cog-Filled" id="CRo-0h-8h4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwQ-Vj-agZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1705" y="608"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bar-Cog" width="25" height="25"/>
+        <image name="Bar-Cog-Filled" width="25" height="25"/>
+        <image name="Bar-Mic" width="25" height="25"/>
+        <image name="Bar-Mic-Filled" width="25" height="25"/>
+    </resources>
+    <color key="tintColor" red="1" green="0.27450980392156865" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

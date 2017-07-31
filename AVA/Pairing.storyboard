@@ -179,12 +179,69 @@ Please choose the OS on which AVA is installed.</string>
                     <view key="view" contentMode="scaleToFill" id="LBJ-mg-g6F">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head over to System Preferences, then Sound." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFk-W5-JTs">
+                                <rect key="frame" x="36" y="25" width="303" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macOS-SysPrefs" translatesAutoresizingMaskIntoConstraints="NO" id="JN4-ff-Pz8">
+                                <rect key="frame" x="36" y="91" width="303" height="60"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macOS-Sound" translatesAutoresizingMaskIntoConstraints="NO" id="piL-mE-SgY">
+                                <rect key="frame" x="36" y="176" width="303" height="60"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Under the Input tab, select the Device with the type Microphone Port." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k10-rn-6ra">
+                                <rect key="frame" x="36" y="256" width="303" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="macOS-Setting" translatesAutoresizingMaskIntoConstraints="NO" id="mZp-cZ-urh">
+                                <rect key="frame" x="36" y="307" width="303" height="206"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsR-WM-rnv">
+                                <rect key="frame" x="36" y="523" width="303" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRw-ht-8XU">
+                                <rect key="frame" x="56" y="533" width="263" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="QRw-ht-8XU" secondAttribute="trailing" constant="40" id="2yE-sz-u6O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="piL-mE-SgY" secondAttribute="trailing" constant="20" id="41i-8b-WzG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mZp-cZ-urh" secondAttribute="trailing" constant="20" id="5cP-z0-oUr"/>
+                            <constraint firstItem="QRw-ht-8XU" firstAttribute="leading" secondItem="LBJ-mg-g6F" secondAttribute="leadingMargin" constant="40" id="BWX-yE-Wza"/>
+                            <constraint firstItem="pFk-W5-JTs" firstAttribute="leading" secondItem="LBJ-mg-g6F" secondAttribute="leadingMargin" constant="20" id="BZq-A4-R5W"/>
+                            <constraint firstItem="mZp-cZ-urh" firstAttribute="leading" secondItem="LBJ-mg-g6F" secondAttribute="leadingMargin" constant="20" id="DHv-Lz-rfG"/>
+                            <constraint firstItem="pFk-W5-JTs" firstAttribute="top" secondItem="m5m-xw-Zqz" secondAttribute="bottom" constant="25" id="P9c-7Q-WE9"/>
+                            <constraint firstItem="piL-mE-SgY" firstAttribute="top" secondItem="JN4-ff-Pz8" secondAttribute="bottom" constant="25" id="RZo-So-yUD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SsR-WM-rnv" secondAttribute="trailing" constant="20" id="XXC-6I-UEb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JN4-ff-Pz8" secondAttribute="trailing" constant="20" id="do6-nK-KIg"/>
+                            <constraint firstItem="lmz-C4-oT4" firstAttribute="top" secondItem="QRw-ht-8XU" secondAttribute="bottom" constant="40" id="dxF-JY-Xv6"/>
+                            <constraint firstItem="SsR-WM-rnv" firstAttribute="leading" secondItem="LBJ-mg-g6F" secondAttribute="leadingMargin" constant="20" id="eb1-xV-LA7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pFk-W5-JTs" secondAttribute="trailing" constant="20" id="egM-Vx-8XH"/>
+                            <constraint firstItem="SsR-WM-rnv" firstAttribute="top" secondItem="mZp-cZ-urh" secondAttribute="bottom" constant="10" id="egr-Yl-GKJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k10-rn-6ra" secondAttribute="trailing" constant="20" id="fGA-v1-a9W"/>
+                            <constraint firstItem="QRw-ht-8XU" firstAttribute="top" secondItem="SsR-WM-rnv" secondAttribute="bottom" constant="10" id="fbB-Ng-iJy"/>
+                            <constraint firstItem="k10-rn-6ra" firstAttribute="top" secondItem="piL-mE-SgY" secondAttribute="bottom" constant="20" id="mSo-ci-5bv"/>
+                            <constraint firstItem="JN4-ff-Pz8" firstAttribute="top" secondItem="pFk-W5-JTs" secondAttribute="bottom" constant="25" id="mbU-Jv-Bj8"/>
+                            <constraint firstItem="k10-rn-6ra" firstAttribute="leading" secondItem="LBJ-mg-g6F" secondAttribute="leadingMargin" constant="20" id="oew-CH-FN0"/>
+                            <constraint firstItem="piL-mE-SgY" firstAttribute="leading" secondItem="LBJ-mg-g6F" secondAttribute="leadingMargin" constant="20" id="qfw-F9-SSC"/>
+                            <constraint firstItem="mZp-cZ-urh" firstAttribute="top" secondItem="k10-rn-6ra" secondAttribute="bottom" constant="10" id="rVH-0k-CDb"/>
+                            <constraint firstItem="JN4-ff-Pz8" firstAttribute="leading" secondItem="LBJ-mg-g6F" secondAttribute="leadingMargin" constant="20" id="tCY-SL-IM8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjP-4M-V7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2247" y="126"/>
+            <point key="canvasLocation" x="2245.5999999999999" y="125.4872563718141"/>
         </scene>
         <!--Pairing Line In Windows View Controller-->
         <scene sceneID="48Q-tJ-bvS">
@@ -396,5 +453,8 @@ Please make sure AVA is ready to be paired, and proceed to the next step!</strin
     <resources>
         <image name="Icon-Bluetooth" width="25" height="25"/>
         <image name="Icon-Wifi" width="25" height="25"/>
+        <image name="macOS-Setting" width="593" height="113"/>
+        <image name="macOS-Sound" width="60" height="60"/>
+        <image name="macOS-SysPrefs" width="60" height="60"/>
     </resources>
 </document>

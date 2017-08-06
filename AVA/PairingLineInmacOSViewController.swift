@@ -21,6 +21,16 @@ class PairingLineInmacOSViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func nextButtonAction(_ sender: Any) {
+        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! HomeTabBarController
+        let ptt = vc.childViewControllers.first as! AVAPushToTalkViewController
+
+        ptt.connectionMode = .linein
+        self.navigationController?.pushViewController(vc, animated: true)
+        //self.present(vc, animated: true, completion: nil)
+    }
+
 
     /*
     // MARK: - Navigation

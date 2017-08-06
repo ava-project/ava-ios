@@ -8,12 +8,27 @@
 
 import UIKit
 import Starscream
+import AVFoundation
 //import lf
+
+enum AVAConnectionMode {
+    case linein
+    case socket
+    case bluetooth
+    case none
+}
 
 class AVAPushToTalkViewController: UIViewController {
 
     var recorder: AVARecorder?
     var address: String!
+    var connectionMode: AVAConnectionMode = AVAConnectionMode.none
+    
+    var socket: WebSocket?
+    var player: AVAudioPlayer?
+    var failedRetries = 0
+    
+    
     
     @IBOutlet weak var infoLabel: UILabel!
     
@@ -22,7 +37,7 @@ class AVAPushToTalkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recorder = AVARecorder(url: address)
+        recorder = AVARecorder()
         recorder?.delegate = self
         let pushTalkView = AVAPushToTalkView(frame: view.frame)
         pushTalkView.delegate = self
@@ -36,7 +51,33 @@ class AVAPushToTalkViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        switch self.connectionMode {
+        case .linein:
+            self.initLineIn()
+            break
+        case .socket:
+            self.initSocket()
+            break
+        default:
+            break
+        }
+    }
+    
+    private func initLineIn() {
+        
+    }
+    
+    private func initSocket() {
+        
+        let servUrl = URL(string: String("ws://").appending(address))
+        socket = WebSocket(url: servUrl!)
+        socket?.delegate = self
+        print("Connecting on \(servUrl?.absoluteString)")
+        socket?.connect()
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -76,37 +117,84 @@ extension AVAPushToTalkViewController: AVAPushToTalkViewDelegate {
 
 extension AVAPushToTalkViewController: AVARecorderDelegate {
     
-    func recorder(recorder: AVARecorder, didConnectOn socket: WebSocket) {
-        
-    }
-    
-    func recorder(recorder: AVARecorder, didDisconnectOn socket: WebSocket, with error: NSError?) {
-        self.infoLabel.text = "Sent!"
-        /*DispatchQueue.main.asyncAfter(deadline: 0.5, execute: {
-            self.activityIndicatorView.stopAnimating()
-            self.infoLabel.isHidden = true
-        })*/
-    }
-    
     func recorder(recorder: AVARecorder, didFailWhileEncoding: Bool) {
         
     }
     
-    func recorder(recorder: AVARecorder, didReceivePong on: WebSocket) {
-        
-    }
-    
-    func recorder(recorder: AVARecorder, didReceiveData data: Data, on: WebSocket) {
-        
-    }
-    
-    func recorder(recorder: AVARecorder, didReceiveMessage message: String, on: WebSocket) {
-        
-    }
-    
     func recorder(recorder: AVARecorder, didFinishRecording: Bool, at filePath: URL) {
+        do {
+            let data = try Data(contentsOf: filePath)
+            
+            switch self.connectionMode {
+            case .socket:
+                socket?.write(data: data) {
+                    print("data written")
+                }
+                break
+            case .linein:
+                do {
+                    self.player = try AVAudioPlayer(data: data)
+                    try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+                    try AVAudioSession.sharedInstance().setActive(true)
+                    if let p = self.player {
+                        p.play()
+                    }
+                } catch {
+                    print("Error : \(error)")
+                }
+                
+                break
+            case .bluetooth:
+                break
+            case .none:
+                break
+            }
+            
+            //socket?.disconnect()
+        } catch {
+            print("Catched error \(error.localizedDescription)")
+        }
         
+        print("Recording ended")
     }
     
     
 }
+
+extension AVAPushToTalkViewController: WebSocketDelegate, WebSocketPongDelegate {
+    
+    func websocketDidConnect(socket: WebSocket) {
+        print("Connected")
+        failedRetries = 0
+    }
+    
+    func websocketDidReceiveData(socket: WebSocket, data: Data) {
+        print("DidReceiveData")
+    }
+    
+    func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
+        print("DidDisconnect with error : \(error.debugDescription)")
+        self.infoLabel.text = "Sent!"
+        /*DispatchQueue.main.asyncAfter(deadline: 0.5, execute: {
+         self.activityIndicatorView.stopAnimating()
+         self.infoLabel.isHidden = true
+         })*/
+        failedRetries += 1
+        guard failedRetries < 5 else {
+            // prompt error
+            return
+        }
+        socket.connect()
+        print("tried to reconnect")
+    }
+    
+    func websocketDidReceiveMessage(socket: WebSocket, text: String) {
+        print("DidReceiveMessage on socket: \(socket.description) with text : \(text)")
+    }
+    
+    func websocketDidReceivePong(socket: WebSocket, data: Data?) {
+        print("PONG")
+    }
+    
+}
+

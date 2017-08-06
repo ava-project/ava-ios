@@ -210,6 +210,9 @@ Please choose the OS on which AVA is installed.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRw-ht-8XU">
                                 <rect key="frame" x="56" y="533" width="263" height="30"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="F44-gr-yOe" eventType="touchUpInside" id="5Dx-ly-z44"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

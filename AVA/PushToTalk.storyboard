@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bsV-wJ-CkL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Push To Talk View Controller-->
+        <scene sceneID="nQ9-3W-HrE">
+            <objects>
+                <viewController id="bsV-wJ-CkL" customClass="AVAPushToTalkViewController" customModule="AVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QM3-al-zrD"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Cl-H9-x0N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lWS-oG-pqu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Y-qK-6fc">
+                                <rect key="frame" x="26" y="40" width="323" height="50.5"/>
+                                <string key="text">Tap and hold to talk
+Release to send</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.15686274510000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qyC-sP-jha">
+                                <rect key="frame" x="177" y="323.5" width="20" height="20"/>
+                                <color key="color" red="1" green="0.15686274510000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUE-NS-h8Y">
+                                <rect key="frame" x="36" y="363.5" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.15686274510000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z6Y-qK-6fc" firstAttribute="leading" secondItem="lWS-oG-pqu" secondAttribute="leadingMargin" constant="10" id="2JJ-km-hiX"/>
+                            <constraint firstItem="dUE-NS-h8Y" firstAttribute="leading" secondItem="lWS-oG-pqu" secondAttribute="leadingMargin" constant="20" id="DNR-TJ-HxT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z6Y-qK-6fc" secondAttribute="trailing" constant="10" id="GvB-eO-z85"/>
+                            <constraint firstItem="qyC-sP-jha" firstAttribute="centerY" secondItem="lWS-oG-pqu" secondAttribute="centerY" id="Hg5-OY-QAU"/>
+                            <constraint firstItem="Z6Y-qK-6fc" firstAttribute="top" secondItem="QM3-al-zrD" secondAttribute="bottom" constant="20" id="Kj5-03-Tmj"/>
+                            <constraint firstItem="dUE-NS-h8Y" firstAttribute="centerX" secondItem="lWS-oG-pqu" secondAttribute="centerX" id="Y4g-ds-kyu"/>
+                            <constraint firstItem="qyC-sP-jha" firstAttribute="centerX" secondItem="lWS-oG-pqu" secondAttribute="centerX" id="alX-gf-XZv"/>
+                            <constraint firstItem="dUE-NS-h8Y" firstAttribute="top" secondItem="qyC-sP-jha" secondAttribute="bottom" constant="20" id="bvi-u8-hkf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dUE-NS-h8Y" secondAttribute="trailing" constant="20" id="yqK-io-umd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="qyC-sP-jha" id="3KF-1h-9UL"/>
+                        <outlet property="infoLabel" destination="dUE-NS-h8Y" id="4BA-jR-nyV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpd-tM-7HK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-491" y="27"/>
+        </scene>
+    </scenes>
+</document>

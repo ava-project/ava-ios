@@ -6,8 +6,8 @@
   Copyright © 2017 Jean Sarda. All rights reserved.
 */
 
-windows_pairing_1 = "";
-windows_pairing_2 = "";
+windows_pairing_1 = "Rendez-vous dans les paramètres de Son.";
+windows_pairing_2 = "Dans l'onglet Enregistrement, sélectionnez l'appareil désiré.";
 
 mac_pairing_1 = "Rendez-vous dans les Préférences Système, puis dans Son.";
 mac_pairing_2 = "Dans l'onglet Entrée, sélectionnez l'appareil avec le type \"Microphone Port\".";

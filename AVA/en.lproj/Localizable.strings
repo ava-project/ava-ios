@@ -6,8 +6,8 @@
   Copyright © 2017 Jean Sarda. All rights reserved.
 */
 
-windows_pairing_1 = "";
-windows_pairing_2 = "";
+windows_pairing_1 = "Go into the Sound panel.";
+windows_pairing_2 = "In the Recording tab, pick the correct device.";
 
 mac_pairing_1 = "Head over to System Preferences, then Sound.";
 mac_pairing_2 = "Inside the Input tab, choose the device with the type \"Microphone Port\".";

@@ -16,6 +16,12 @@ class PairingLineInWindowsViewController: UIViewController {
     
     
     @IBAction func nextAction(_ sender: Any) {
+        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! HomeTabBarController
+        let ptt = vc.childViewControllers.first as! AVAPushToTalkViewController
+        
+        ptt.connectionMode = .linein
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidLoad() {

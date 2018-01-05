@@ -22,6 +22,7 @@ class PairingLineInWindowsViewController: UIViewController {
         super.viewDidLoad()
 
         localize()
+        navigationItem.title = "Windows"
     }
     
     private func localize() {

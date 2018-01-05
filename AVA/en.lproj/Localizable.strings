@@ -11,6 +11,7 @@ windows_pairing_2 = "";
 
 mac_pairing_1 = "Head over to System Preferences, then Sound.";
 mac_pairing_2 = "Inside the Input tab, choose the device with the type \"Microphone Port\".";
+linux_pairing = "Please refer to your distribution's documentation, then come back and tap Next.";
 
 next = "Next";
 pairing = "Pairing";

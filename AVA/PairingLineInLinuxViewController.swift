@@ -10,26 +10,47 @@ import UIKit
 
 class PairingLineInLinuxViewController: UIViewController {
 
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBAction func ubuntuAction(_ sender: Any) {
+        let url = URL(string: "https://doc.ubuntu-fr.org/audio")!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func debianAction(_ sender: Any) {
+        let url = URL(string: "https://wiki.debian.org/fr/SoundConfiguration")!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func fedoraAction(_ sender: Any) {
+        let url = URL(string: "https://ask.fedoraproject.org/en/question/42921/how-do-i-configure-my-mic-on-f20/")!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
+    
+
+    
+    @IBAction func nextAction(_ sender: Any) {
+        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! HomeTabBarController
+        let ptt = vc.childViewControllers.first as! AVAPushToTalkViewController
+        
+        ptt.connectionMode = .linein
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        nextButton.setTitle("next".localized, for: .normal)
+        titleLabel.text = "linux_pairing".localized
+        navigationItem.title = "Linux"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

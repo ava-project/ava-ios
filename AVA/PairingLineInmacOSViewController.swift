@@ -20,6 +20,7 @@ class PairingLineInmacOSViewController: UIViewController {
         firstLabel.text = "mac_pairing_1".localized
         secondLabel.text = "mac_pairing_2".localized
         nextButton.setTitle("next".localized, for: .normal)
+        navigationItem.title = "macOS"
     }
     
     @IBAction func nextButtonAction(_ sender: Any) {

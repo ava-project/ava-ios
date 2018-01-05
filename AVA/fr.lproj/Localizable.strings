@@ -11,6 +11,7 @@ windows_pairing_2 = "";
 
 mac_pairing_1 = "Rendez-vous dans les Préférences Système, puis dans Son.";
 mac_pairing_2 = "Dans l'onglet Entrée, sélectionnez l'appareil avec le type \"Microphone Port\".";
+linux_pairing = "Veuillez vous référer à la documentation de votre distribution, puis revenez ici et appuyez sur Suivant.";
 
 next = "Suivant";
 pairing = "Pairage";

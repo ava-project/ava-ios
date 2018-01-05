@@ -29,7 +29,11 @@ class AVAPushToTalkViewController: UIViewController {
     var failedRetries = 0
     
     
-    
+    @IBOutlet weak var instructionsLabel: UILabel! {
+        didSet {
+            instructionsLabel.text = "tap_and_hold_instruction".localized
+        }
+    }
     @IBOutlet weak var infoLabel: UILabel!
     
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
@@ -42,7 +46,7 @@ class AVAPushToTalkViewController: UIViewController {
         pushTalkView.delegate = self
         self.view.addSubview(pushTalkView)
         self.activityIndicatorView.isHidden = true
-        self.navigationItem.title = "Connected"
+        self.navigationItem.title = "Connexion ✅"
     }
 
     override func didReceiveMemoryWarning() {
@@ -86,19 +90,23 @@ class AVAPushToTalkViewController: UIViewController {
 extension AVAPushToTalkViewController: AVAPushToTalkViewDelegate {
     
     func pushToTalkView(didReceiveTouchUp: Bool) {
-        recorder?.stop()
+        if self.connectionMode == .socket {
+            recorder?.stop()
+        }
         UIView.animate(withDuration: 0.1, animations: {
             self.activityIndicatorView.stopAnimating()
-            self.infoLabel.text = "Sending"
+            self.infoLabel.text = "📨"
         })
 
     }
     
     func pushToTalkView(didReceiveTouchDown: Bool) {
-        recorder?.record()
+        if self.connectionMode == .socket {
+            recorder?.record()
+        }
         UIView.animate(withDuration: 0.1, animations: {
             self.activityIndicatorView.startAnimating()
-            self.infoLabel.text = "Recording"
+            self.infoLabel.text = "🎤"
             self.infoLabel.isHidden = false
         })
     }
@@ -112,6 +120,7 @@ extension AVAPushToTalkViewController: AVARecorderDelegate {
     }
     
     func recorder(recorder: AVARecorder, didFinishRecording: Bool, at filePath: URL) {
+        print("Recording ended")
         do {
             let data = try Data(contentsOf: filePath)
             
@@ -122,16 +131,18 @@ extension AVAPushToTalkViewController: AVARecorderDelegate {
                 }
                 break
             case .linein:
-                do {
+                /*do {
+                    self.player?.pause()
                     self.player = try AVAudioPlayer(data: data)
                     try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
                     try AVAudioSession.sharedInstance().setActive(true)
                     if let p = self.player {
+                        print("playing")
                         p.play()
                     }
                 } catch {
                     print("Error : \(error)")
-                }
+                }*/
                 
                 break
             case .bluetooth:
@@ -144,8 +155,6 @@ extension AVAPushToTalkViewController: AVARecorderDelegate {
         } catch {
             print("Catched error \(error.localizedDescription)")
         }
-        
-        print("Recording ended")
     }
     
     
@@ -164,7 +173,7 @@ extension AVAPushToTalkViewController: WebSocketDelegate, WebSocketPongDelegate 
     
     func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
         print("DidDisconnect with error : \(error.debugDescription)")
-        self.infoLabel.text = "Sent!"
+        self.infoLabel.text = "📨 ✅!"
         /*DispatchQueue.main.asyncAfter(deadline: 0.5, execute: {
          self.activityIndicatorView.stopAnimating()
          self.infoLabel.isHidden = true

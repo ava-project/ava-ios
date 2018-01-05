@@ -10,6 +10,8 @@ import UIKit
 
 class PairingLineInOSViewController: UIViewController {
 
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     @IBOutlet var macOSButton: UIButton! {
         didSet {
             macOSButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -50,6 +52,7 @@ class PairingLineInOSViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0)
+        welcomeLabel.text = "welcome_line_in".localized
     }
 
     override func didReceiveMemoryWarning() {

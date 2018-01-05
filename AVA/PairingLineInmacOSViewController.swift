@@ -10,15 +10,16 @@ import UIKit
 
 class PairingLineInmacOSViewController: UIViewController {
 
+    @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        firstLabel.text = "mac_pairing_1".localized
+        secondLabel.text = "mac_pairing_2".localized
+        nextButton.setTitle("next".localized, for: .normal)
     }
     
     @IBAction func nextButtonAction(_ sender: Any) {

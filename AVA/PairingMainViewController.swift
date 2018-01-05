@@ -12,18 +12,19 @@ class PairingMainViewController: UIViewController {
     
     @IBOutlet weak var wifiButton: UIButton! {
         didSet {
-            configure(button: wifiButton, color: UIColor.white)
+            configure(button: wifiButton, color: UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0))
         }
     }
     @IBOutlet weak var bluetoothButton: UIButton! {
         didSet {
-            configure(button: bluetoothButton, color: UIColor.white)
+            configure(button: bluetoothButton, color: UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0))
         }
     }
     
     @IBOutlet weak var lineinButton: UIButton! {
         didSet {
-            configure(button: lineinButton, color: UIColor.white)
+            configure(button: lineinButton, color: UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0))
+            lineinButton.setTitle("wired".localized, for: .normal)
         }
     }
     
@@ -43,8 +44,8 @@ class PairingMainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0)
-        self.navigationItem.title = "Pairing"
+        //self.view.backgroundColor = UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0)
+        self.navigationItem.title = "pairing".localized
         //self.navigationItem.backBarButtonItem?.tintColor = UIColor.white
         self.navigationController?.navigationBar.tintColor = UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0)
         //self.navigationController?.navigationBar.backgroundColor = UIColor(red: 187/255, green: 29/255, blue: 88/255, alpha: 1.0)

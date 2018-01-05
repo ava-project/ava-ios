@@ -10,26 +10,24 @@ import UIKit
 
 class PairingLineInWindowsViewController: UIViewController {
 
+    @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    
+    @IBAction func nextAction(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        localize()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func localize() {
+        firstLabel.text = "windows_pairing_1".localized
+        secondLabel.text = "windows_pairing_2".localized
+        nextButton.setTitle("next".localized, for: .normal)
     }
-    */
 
 }

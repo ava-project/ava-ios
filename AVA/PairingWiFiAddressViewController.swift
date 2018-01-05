@@ -12,6 +12,7 @@ class PairingWiFiAddressViewController: UIViewController {
 
     
     
+    @IBOutlet weak var enterLabel: UILabel!
     
     @IBOutlet weak var addressTextField: UITextField!
     
@@ -24,6 +25,7 @@ class PairingWiFiAddressViewController: UIViewController {
             nextButton.layer.cornerRadius = 8
             nextButton.layer.borderColor = UIColor.white.cgColor
             nextButton.tintColor = UIColor.white
+            nextButton.setTitle("next".localized, for: .normal)
         }
     }
     
@@ -59,6 +61,7 @@ class PairingWiFiAddressViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+       enterLabel.text = "enter_address".localized
         addressTextField.delegate = self
         self.addObservers()
         self.view.backgroundColor = UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0)

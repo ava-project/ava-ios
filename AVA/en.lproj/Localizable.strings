@@ -5,3 +5,24 @@
   Created by Jean Sarda on 06/10/2017.
   Copyright © 2017 Jean Sarda. All rights reserved.
 */
+
+windows_pairing_1 = "";
+windows_pairing_2 = "";
+
+mac_pairing_1 = "Head over to System Preferences, then Sound.";
+mac_pairing_2 = "Inside the Input tab, choose the device with the type \"Microphone Port\".";
+
+next = "Next";
+pairing = "Pairing";
+wired = "Wired";
+
+welcome_line_in = "Welcome to the wired pairing!\n\nPlease choose the OS on which AVA is installed.";
+welcome_wifi = "Welcome to the WiFi pairing wizard! We will take you through the necessary steps to connect your phone to AVA and use it as your microphone input.\n\nPlease make sure AVA is ready to be paired, and proceed to the next step!";
+
+enter_address = "Please enter the AVA Mobile Bride address";
+
+tap_and_hold_instruction = "Tap and hold to talk \nRelease to send";
+
+sample_rate = "Sample rate";
+number_of_channels = "# of channels";
+encoder_quality = "Encoder quality";

@@ -10,7 +10,7 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
 
-    var settings: [String] = ["sampleRate", "numberOfChannels", "encoderQuality"]
+    var settings: [String] = ["sample_rate", "number_of_channels", "encoder_quality"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class SettingsTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = settingName//NSLocalizedString(settingName, comment: "")
+        cell.textLabel?.text = settingName.localized
 
         return cell
     }
@@ -46,15 +46,15 @@ class SettingsTableViewController: UITableViewController {
         let settingName = settings[indexPath.row]
         
         switch settingName {
-        case "sampleRate":
+        case "sample_rate".localized:
             let vc = storyboard?.instantiateViewController(withIdentifier: "sampleRatePickerVC") as! SampleRatePickerViewController
             self.navigationController?.pushViewController(vc, animated: true)
             break
-        case "numberOfChannels":
+        case "number_of_channels".localized:
             let vc = storyboard?.instantiateViewController(withIdentifier: "numberOfChannelsPickerVC") as! NumberOfChannelsPickerViewController
             self.navigationController?.pushViewController(vc, animated: true)
             break
-        case "encoderQuality":
+        case "encoder_quality".localized:
             let vc = storyboard?.instantiateViewController(withIdentifier: "encoderQualityPickerVC") as! EncoderQualityPickerViewController
             self.navigationController?.pushViewController(vc, animated: true)
             break

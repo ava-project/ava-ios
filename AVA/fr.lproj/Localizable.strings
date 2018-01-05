@@ -5,3 +5,24 @@
   Created by Jean Sarda on 06/10/2017.
   Copyright © 2017 Jean Sarda. All rights reserved.
 */
+
+windows_pairing_1 = "";
+windows_pairing_2 = "";
+
+mac_pairing_1 = "Rendez-vous dans les Préférences Système, puis dans Son.";
+mac_pairing_2 = "Dans l'onglet Entrée, sélectionnez l'appareil avec le type \"Microphone Port\".";
+
+next = "Suivant";
+pairing = "Pairage";
+wired = "Filaire";
+
+welcome_line_in = "Bienvenue dans l'appairage via cable!\n\nVeuillez choisir le système d'exploitation sur lequel AVA est installé.";
+welcome_wifi = "Bienvenue dans l'appairage via Wi-Fi! Nous allons vous guidez à travers les étapes nécessaires pour connecter votre smartphone à AVA et l'utiliser en tant que microphone.\n\nVeuillez vous assurer qu'AVA est prêt à être pairé, et passez à l'étape suivante!";
+
+enter_address = "Veuillez entrer l'adresse de pontage d'AVA Mobile";
+
+tap_and_hold_instruction = "Appuyez et maintenez pour parler\nRelâchez pour envoyer";
+
+sample_rate = "Taux d'échantillonnage";
+number_of_channels = "Nb de canaux";
+encoder_quality = "Qualité d'encodage";

@@ -21,6 +21,7 @@
 		AB64DEE01EFD3D9F0024E291 /* PairingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEDF1EFD3D9F0024E291 /* PairingMainViewController.swift */; };
 		AB64DEE31EFD48B20024E291 /* PairingWiFiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE21EFD48B20024E291 /* PairingWiFiViewController.swift */; };
 		AB64DEE51EFD4AA70024E291 /* PairingBTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */; };
+		AB81FF781FFF69E6006AA6E4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81FF771FFF69E6006AA6E4 /* String+.swift */; };
 		AB941F941F14EC1C000305DD /* NibSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F931F14EC1C000305DD /* NibSettable.swift */; };
 		AB941F981F14ECA3000305DD /* AVAPushToTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */; };
 		AB941F9A1F14ECE0000305DD /* AVAPushToTalkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */; };
@@ -52,6 +53,7 @@
 		AB64DEDF1EFD3D9F0024E291 /* PairingMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingMainViewController.swift; sourceTree = "<group>"; };
 		AB64DEE21EFD48B20024E291 /* PairingWiFiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingWiFiViewController.swift; sourceTree = "<group>"; };
 		AB64DEE41EFD4AA70024E291 /* PairingBTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingBTViewController.swift; sourceTree = "<group>"; };
+		AB81FF771FFF69E6006AA6E4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		AB941F931F14EC1C000305DD /* NibSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibSettable.swift; sourceTree = "<group>"; };
 		AB941F971F14ECA3000305DD /* AVAPushToTalkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAPushToTalkView.swift; sourceTree = "<group>"; };
 		AB941F991F14ECE0000305DD /* AVAPushToTalkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAPushToTalkView.xib; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				AB941F931F14EC1C000305DD /* NibSettable.swift */,
 				AB941F9B1F14F179000305DD /* AVARecorder.swift */,
+				AB81FF771FFF69E6006AA6E4 /* String+.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				2DD1AFFA1F2E4A6A00C514B0 /* PairingLineInOSViewController.swift in Sources */,
 				2DD1AFF71F2E3CB100C514B0 /* HomeTabBarController.swift in Sources */,
 				AB941F9C1F14F179000305DD /* AVARecorder.swift in Sources */,
+				AB81FF781FFF69E6006AA6E4 /* String+.swift in Sources */,
 				2DD1AFF51F2E3BFD00C514B0 /* SettingsTableViewController.swift in Sources */,
 				AB64DEE31EFD48B20024E291 /* PairingWiFiViewController.swift in Sources */,
 				ABABCE6B1E98DDD100EAE31E /* AppDelegate.swift in Sources */,

@@ -10,6 +10,8 @@ import UIKit
 
 class PairingWiFiViewController: UIViewController {
     
+    @IBOutlet weak var welcomeWifiLabel: UILabel!
+    
     @IBOutlet weak var nextButton: UIButton! {
         didSet {
             nextButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -19,6 +21,7 @@ class PairingWiFiViewController: UIViewController {
             nextButton.layer.cornerRadius = 8
             nextButton.layer.borderColor = UIColor.white.cgColor
             nextButton.tintColor = UIColor.white
+            nextButton.setTitle("next".localized, for: .normal)
         }
     }
     
@@ -35,6 +38,7 @@ class PairingWiFiViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor(red: 255/255, green: 40/255, blue: 119/255, alpha: 1.0)
         self.navigationItem.title = "WiFi"
+        welcomeWifiLabel.text = "welcome_wifi".localized
     }
 
     override func didReceiveMemoryWarning() {
